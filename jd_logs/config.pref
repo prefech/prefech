@@ -1,0 +1,37 @@
+baseurl = "https://docs.prefech.com/vmenu"
+languageCode = "en-us"
+title = "vMenu Documentation"
+theme = "hugo-theme-learn"
+metadataformat = "yaml"
+enableGitInfo = false
+
+[params]
+  description = "JD_logs Documentation"
+  author = "Prefech"
+  showVisitedLinks = true
+  themeVariant = "blue"
+  editURL = "https://github.com/prefech/vMenuDocs/tree/master/content/"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[Languages]
+[Languages.en]
+title = "vMenu Documentation"
+weight = 1
+languageName = "English"
+
+[[Languages.en.menu.shortcuts]] 
+name = "<i style='color: #2196f3;' class='fab fa-github'></i>GitHub Repository"
+url = "https://github.com/prefech/vMenu"
+weight = 10
+
+[[Languages.en.menu.shortcuts]]
+name = "<i style='color: #607d8b;' class='fas fa-download'></i>Download JD_logs"
+url = "https://github.com/prefech/JD_logs/releases/latest/"
+weight = 30
+
+[[Languages.en.menu.shortcuts]]
+name = "<i style='color: #2196f3;' class='fas fa-globe'></i>My main website"
+url = "https://prefech.com/"
+weight = 60
