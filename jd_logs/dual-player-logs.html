@@ -36,55 +36,55 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">
+            <a class="nav-link" href="https://docs.prefech.com/jd_logs/#about">
               <i class="material-icons">info</i>
               <p>About</p>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#requirements">
+            <a class="nav-link" href="https://docs.prefech.com/jd_logs/#requirements">
               <i class="material-icons">info</i>
               <p>Requirements</p>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#main-features">
+            <a class="nav-link" href="https://docs.prefech.com/jd_logs/#main-features">
               <i class="material-icons">info</i>
               <p>Main Features</p>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#download-installation">
+            <a class="nav-link" href="https://docs.prefech.com/jd_logs/#download-installation">
               <i class="material-icons">info</i>
               <p>Download & Installation</p>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#creating-custom-logs">
+            <a class="nav-link" href="https://docs.prefech.com/jd_logs/#creating-custom-logs">
               <i class="material-icons">info</i>
               <p>Creating Custom Logs</p>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./single-player-logs" style="margin-left: 15%;">
+            <a class="nav-link" href="https://docs.prefech.com/jd_logs/single-player-logs" style="margin-left: 15%;">
               <i class="material-icons">chevron_right</i>
               <p>Single Player Logs</p>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./dual-player-logs" style="margin-left: 15%;">
+            <a class="nav-link" href="https://docs.prefech.com/jd_logs/dual-player-logs" style="margin-left: 15%;">
               <i class="material-icons">chevron_right</i>
               <p>Dual Player Logs</p>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./hide-player-details" style="margin-left: 15%;">
+            <a class="nav-link" href="https://docs.prefech.com/jd_logs/hide-player-details" style="margin-left: 15%;">
               <i class="material-icons">chevron_right</i>
               <p>Hide Player Details</p>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#change-log">
+            <a class="nav-link" href="https://docs.prefech.com/jd_logs/#change-log">
               <i class="material-icons">info</i>
               <p>Change Log</p>
             </a>
@@ -115,62 +115,24 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-12">
-              <h2 id="requirements">Requirements</h2>
-              • A Discord Server (<a style="color:lightskyblue;" href="https://support.discord.com/hc/en-us/articles/204849977-How-do-I-create-a-server-" target="_blank">How do I create a server</a>)<br>
-              • FXServer (<a style="color:lightskyblue;" href="https://docs.fivem.net/docs/server-manual/setting-up-a-server/" target="_blank">Setting up a server</a>)<br>
-            </div>
-          </div>
-          <hr>
-          <div class="row">
-            <div class="col-md-12">
-              <h2 id="main-features">Main Features</h2>
-              • Basic logs:<br>
-                &emsp;• Chat Logs (Messages typed in chat)<br>
-                &emsp;• Join Logs (When i player is connecting to the sever)<br>
-                &emsp;• Leave Logs (When a player disconnects from the server)<br>
-                &emsp;• Death Logs (When a player dies/get killed)<br>
-                &emsp;• Shooting Logs (When a player fires a weapon)<br>
-                &emsp;• Resource Logs (When a resouce get started/stopped)<br>
-              • Optional custom logs<br>
-              • Easy to add with the export.<br>
-            </div>
-          </div> 
-          <hr>
-          <div class="row">
-            <div class="col-md-12">
-              <h2 id="download-installation">Download & Installation</h2>
-              1. Download the files<br>
-              2. Put the JD_logs folder in the server resource directory<br>
-              3. Add this to your server.cfg<br>
-              <code>ensure JD_logs</code><br>
-              4. Restart your server
-            </div>
-          </div>
-          <hr>
-          <div class="row">
-            <div class="col-md-12">
-              <h2 id="creating-custom-logs">Creating Custom Logs</h2>
-              1. Add the following code to your function/command.<br>
-              &emsp;<i>This code needs to be added in the resource of the action you want to log.</i>
-              &emsp;<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; border-radius: 10px; box-shadow: 2px 2px 3px #000000; background: rgb(40, 42, 54); color: rgb(248, 248, 242);">exports.JD_logs:discord(<span class="hljs-string" style="color: rgb(241, 250, 140);">"EMBED_MESSAGE"</span>, PLAYER_ID, PLAYER_2_ID, <span class="hljs-string" style="color: rgb(241, 250, 140);">'DECIMAL_OR_HEX_COLOR_CODE'</span>, <span class="hljs-string" style="color: rgb(241, 250, 140);">'WEBHOOK_CHANNEL'</span>)</pre>
-              &emsp;<b style="color:lightskyblue;">EMBED_MESSAGE:</b> This will be the message send in the top of the embed.<br>
-              &emsp;<b style="color:lightskyblue;">PLAYER_ID:</b> This will send the player to the script to get the info. (This needs to be a server id)<br>
-              &emsp;<b style="color:lightskyblue;">PLAYER_2_ID:</b> This will send the second player's to the script to get the info. (This needs to be a server id)<br>
-              &emsp;<b style="color:lightskyblue;">COLOR:</b> This will be the color of the embed. (You can use Decimal colors or Hex colors.)<br>
-              &emsp;<b style="color:lightskyblue;">WEBHOOK_CHANNEL:</b> This will be the webhook channel listed in the config.lua.<br>
-              <br>
-              2. Create a discord channel with webhook and add this to the webhooks.
-              <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; border-radius: 10px; box-shadow: 2px 2px 3px #000000; background: rgb(40, 42, 54); color: rgb(248, 248, 242);">local <span class="hljs-attr">webhooks</span> = {
-  <span class="hljs-attr">all</span> = <span class="hljs-string" style="color: rgb(241, 250, 140);">"DISCORD_WEBHOOK"</span>,
-  <span class="hljs-attr">chat</span> = <span class="hljs-string" style="color: rgb(241, 250, 140);">"DISCORD_WEBHOOK"</span>,
-  <span class="hljs-attr">joins</span> = <span class="hljs-string" style="color: rgb(241, 250, 140);">"DISCORD_WEBHOOK"</span>,
-  <span class="hljs-attr">leaving</span> = <span class="hljs-string" style="color: rgb(241, 250, 140);">"DISCORD_WEBHOOK"</span>,
-  <span class="hljs-attr">deaths</span> = <span class="hljs-string" style="color: rgb(241, 250, 140);">"DISCORD_WEBHOOK"</span>,
-  <span class="hljs-attr">shooting</span> = <span class="hljs-string" style="color: rgb(241, 250, 140);">"DISCORD_WEBHOOK"</span>,
-  <span class="hljs-attr">resources</span> = <span class="hljs-string" style="color: rgb(241, 250, 140);">"DISCORD_WEBHOOK"</span>,
-  <span class="hljs-attr">WEBHOOK_CHANNEL</span> = <span class="hljs-string" style="color: rgb(241, 250, 140);">"DISCORD_WEBHOOK"</span>, &lt;------
-}</pre>
-              &emsp;<i>This can be found in the <b style="color:lightskyblue;">config.lua</b></i>
+              <h3 id="dual-player-logs">Using the export for two players:</h3>
+              <b style="color:lightskyblue;">PLAYER_ID:</b> is the variable that is used for getting the player info.
+              <b style="color:lightskyblue;">PLAYER_2_ID:</b> this will be the server id of the second player to get their info.
+              <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; border-radius: 10px; box-shadow: 2px 2px 3px #000000; background: rgb(40, 42, 54); color: rgb(248, 248, 242);">exports.JD_logs:discord(<span class="hljs-string" style="color: rgb(241, 250, 140);">"EMBED_MESSAGE"</span>, PLAYER_ID, PLAYER_2_ID, <span class="hljs-string" style="color: rgb(241, 250, 140);">'DECIMAL_OR_HEX_COLOR_CODE'</span>, <span class="hljs-string" style="color: rgb(241, 250, 140);">'WEBHOOK_CHANNEL'</span>)</pre>
+
+              <b style="color:lightskyblue;">PLAYER_2_ID</b> will be a server variable that is the server id of the second player<br>
+              Keep in mind these might also change depending on the framework<br>
+              <b style="color:lightskyblue;">Example: (/mention [PlayerID])</b>
+              <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; border-radius: 10px; box-shadow: 2px 2px 3px #000000; background: rgb(40, 42, 54); color: rgb(248, 248, 242);">RegisterCommand(<span class="hljs-string" style="color: rgb(241, 250, 140);">"mention"</span>, <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(255, 121, 198); font-weight: 700;">function</span><span class="hljs-params">(source, args, rawCommand)</span></span>
+    TriggerClientEvent(<span class="hljs-string" style="color: rgb(241, 250, 140);">'chatMessage'</span>, <span class="hljs-number">-1</span>, <span class="hljs-string" style="color: rgb(241, 250, 140);">"Mention | "</span> .. GetPlayerName(args[<span class="hljs-number">1</span>]), { <span class="hljs-number">201</span>, <span class="hljs-number">201</span>, <span class="hljs-number">201</span> })
+    exports.JD_logs:discord(<span class="hljs-string" style="color: rgb(241, 250, 140);">"Mention | "</span> .. GetPlayerName(args[<span class="hljs-number">1</span>]) , source, args[<span class="hljs-number">1</span>], <span class="hljs-string" style="color: rgb(241, 250, 140);">'#F1F1F1'</span>, <span class="hljs-string" style="color: rgb(241, 250, 140);">'mention'</span>)
+<span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">end</span>)</pre>
+
+              <b style="color:lightskyblue;">EMBED_MESSAGE:</b> This will be the /mention message in this case<br>
+              <b style="color:lightskyblue;">PLAYER_ID:</b> In this use it will be <b style="color:lightskyblue;">source</b><br>
+              <b style="color:lightskyblue;">PLAYER_2_ID:</b> Since the second player's id is the first value after the command it will be <b style="color:lightskyblue;">args[1]</b><br>
+              <b style="color:lightskyblue;">COLOR:</b> This can be any color you want<br>
+              <b style="color:lightskyblue;">CHANNEL:</b> This will be linked to the webhook in the config.
             </div>
           </div>
         </div>
