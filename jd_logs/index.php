@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Hello, world!</title>
+  <title>Prefech | Docs | JD_logs </title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
@@ -16,15 +16,15 @@
 
 <body class="dark-edition">
   <div class="wrapper ">
-    <div class="sidebar" data-color="purple" data-background-color="black" data-image="./assets/img/sidebar-2.jpg">
+    <div class="sidebar" data-color="purple" data-background-color="black" data-image="./assets/img/BG.png">
       <!--
       Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
 
       Tip 2: you can also add an image using data-image tag
   -->
       <div class="logo">
-        <a href="http://www.creative-tim.com" class="simple-text logo-normal">
-          Creative Tim
+        <a href="http://www.prefech.com.com/jd_logs/" class="simple-text logo-normal">
+          JD_logs
         </a>
       </div>
       <div class="sidebar-wrapper">
