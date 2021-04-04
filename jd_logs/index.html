@@ -158,7 +158,18 @@
               2. Put the JD_logs folder in the server resource directory<br>
               3. Add this to your server.cfg<br>
               <code>ensure JD_logs</code><br>
-              4. Restart your server
+              4. Open the Config.lua in the JD_logs folder and update the settings to your liking.<br>
+              5. Add webhooks to the Config.webhooks: (<a style="color:lightskyblue;" href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks" target="_blank">Making a discord webhook</a>)
+              <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; border-radius: 10px; box-shadow: 2px 2px 3px #000000; background: rgb(40, 42, 54); color: rgb(248, 248, 242);"><span class="hljs-attr">Config.webhooks</span> = {
+  <span class="hljs-attr">all</span> = <span class="hljs-string" style="color: rgb(241, 250, 140);">"https://discord.com/api/webhooks/..."</span>,
+  <span class="hljs-attr">chat</span> = <span class="hljs-string" style="color: rgb(241, 250, 140);">"DISCORD_WEBHOOK"</span>,
+  <span class="hljs-attr">joins</span> = <span class="hljs-string" style="color: rgb(241, 250, 140);">"DISCORD_WEBHOOK"</span>,
+  <span class="hljs-attr">leaving</span> = <span class="hljs-string" style="color: rgb(241, 250, 140);">"DISCORD_WEBHOOK"</span>,
+  <span class="hljs-attr">deaths</span> = <span class="hljs-string" style="color: rgb(241, 250, 140);">"DISCORD_WEBHOOK"</span>,
+  <span class="hljs-attr">shooting</span> = <span class="hljs-string" style="color: rgb(241, 250, 140);">"DISCORD_WEBHOOK"</span>,
+  <span class="hljs-attr">resources</span> = <span class="hljs-string" style="color: rgb(241, 250, 140);">"DISCORD_WEBHOOK"</span>
+}</pre>
+               6. Restart your server
             </div>
           </div>
           <hr>
@@ -175,7 +186,7 @@
               &emsp;<b style="color:lightskyblue;">WEBHOOK_CHANNEL:</b> This will be the webhook channel listed in the config.lua.<br>
               <br>
               2. Create a discord channel with webhook and add this to the webhooks.
-              <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; border-radius: 10px; box-shadow: 2px 2px 3px #000000; background: rgb(40, 42, 54); color: rgb(248, 248, 242);">local <span class="hljs-attr">webhooks</span> = {
+              <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; border-radius: 10px; box-shadow: 2px 2px 3px #000000; background: rgb(40, 42, 54); color: rgb(248, 248, 242);"><span class="hljs-attr">Config.webhooks</span> = {
   <span class="hljs-attr">all</span> = <span class="hljs-string" style="color: rgb(241, 250, 140);">"DISCORD_WEBHOOK"</span>,
   <span class="hljs-attr">chat</span> = <span class="hljs-string" style="color: rgb(241, 250, 140);">"DISCORD_WEBHOOK"</span>,
   <span class="hljs-attr">joins</span> = <span class="hljs-string" style="color: rgb(241, 250, 140);">"DISCORD_WEBHOOK"</span>,
