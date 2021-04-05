@@ -99,7 +99,7 @@
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
         <div class="container-fluid">
           <div class="navbar-wrapper">
-            <a class="navbar-brand">JD_logs / Dual Player Logs</a>
+            <a class="navbar-brand">JD_logs / Create Discord Webhooks</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -129,24 +129,17 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-12">
-              <h3 id="dual-player-logs">Using the export for two players:</h3>
-              <b style="color:lightskyblue;">PLAYER_ID:</b> is the variable that is used for getting the player info.
-              <b style="color:lightskyblue;">PLAYER_2_ID:</b> this will be the server id of the second player to get their info.
-              <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; border-radius: 10px; box-shadow: 2px 2px 3px #000000; background: rgb(40, 42, 54); color: rgb(248, 248, 242);">exports.JD_logs:discord(<span class="hljs-string" style="color: rgb(241, 250, 140);">"EMBED_MESSAGE"</span>, PLAYER_ID, PLAYER_2_ID, <span class="hljs-string" style="color: rgb(241, 250, 140);">'DECIMAL_OR_HEX_COLOR_CODE'</span>, <span class="hljs-string" style="color: rgb(241, 250, 140);">'WEBHOOK_CHANNEL'</span>)</pre>
-
-              <b style="color:lightskyblue;">PLAYER_2_ID</b> will be a server variable that is the server id of the second player<br>
-              Keep in mind these might also change depending on the framework<br>
-              <b style="color:lightskyblue;">Example: (/mention [PlayerID])</b>
-              <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; border-radius: 10px; box-shadow: 2px 2px 3px #000000; background: rgb(40, 42, 54); color: rgb(248, 248, 242);">RegisterCommand(<span class="hljs-string" style="color: rgb(241, 250, 140);">"mention"</span>, <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(255, 121, 198); font-weight: 700;">function</span><span class="hljs-params">(source, args, rawCommand)</span></span>
-    TriggerClientEvent(<span class="hljs-string" style="color: rgb(241, 250, 140);">'chatMessage'</span>, <span class="hljs-number">-1</span>, <span class="hljs-string" style="color: rgb(241, 250, 140);">"Mention | "</span> .. GetPlayerName(args[<span class="hljs-number">1</span>]), { <span class="hljs-number">201</span>, <span class="hljs-number">201</span>, <span class="hljs-number">201</span> })
-    exports.JD_logs:discord(<span class="hljs-string" style="color: rgb(241, 250, 140);">"Mention | "</span> .. GetPlayerName(args[<span class="hljs-number">1</span>]) , source, args[<span class="hljs-number">1</span>], <span class="hljs-string" style="color: rgb(241, 250, 140);">'#F1F1F1'</span>, <span class="hljs-string" style="color: rgb(241, 250, 140);">'mention'</span>)
-<span class="hljs-keyword" style="color: rgb(139, 233, 253); font-weight: 700;">end</span>)</pre>
-
-              <b style="color:lightskyblue;">EMBED_MESSAGE:</b> This will be the /mention message in this case<br>
-              <b style="color:lightskyblue;">PLAYER_ID:</b> In this use it will be <b style="color:lightskyblue;">source</b><br>
-              <b style="color:lightskyblue;">PLAYER_2_ID:</b> Since the second player's id is the first value after the command it will be <b style="color:lightskyblue;">args[1]</b><br>
-              <b style="color:lightskyblue;">COLOR:</b> This can be any color you want<br>
-              <b style="color:lightskyblue;">CHANNEL:</b> This will be linked to the webhook in the config.
+              1. Open your Server Settings and head into the Integrations tab.<br>
+              2. Click the "Create Webhook" button to create a new webhook.<br>
+              <br><img src="./../assets/img/discord/webhook1.png" style="width:100%; max-width:600px;"><br><br>
+              You'll have a few options here. You can:<br>
+              <br>
+              • <b style="color:lightskyblue;">Edit the avatar:</b> By clicking the avatar next to the Name in the top left<br>
+              • <b style="color:lightskyblue;">Choose what channel the Webhook posts to:</b> By selecting the desired text channel in the  dropdown menu.<br>
+              • <b style="color:lightskyblue;">Name your Webhook:</b> Good for distinguishing multiple webhooks for multiple different services<br>
+              <br><img src="./../assets/img/discord/webhook2.png" style="width:100%; max-width:600px;"><br><br>
+              You now have your own handy webhook setup and linked to the channel you need it to send messages to.<br>
+              
             </div>
           </div>
         </div>
