@@ -1,4 +1,6 @@
 <!-- markdownlint-disable-next-line first-line-heading -->
+- [Home](https://docs.prefech.com/)
+**Index**
 - [Index](introduction)
 - [Exports](export)
 - [Embeds](embeds)
