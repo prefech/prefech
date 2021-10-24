@@ -8,7 +8,7 @@ For any questions or problems related to the resources, feel free to get in touc
 
 If you can't find the answer to your question you can always have a look on the forums: https://forum.prefech.com/
 
-And you're also welcome to join our discord:
+And you're also welcome to join our discord:  
 <a href="https://discord.gg/prefech" title=""><img alt="Discord Invite" src="https://discordapp.com/api/guilds/721339695199682611/widget.png?style=banner2"></a>
 
 <!-- GitHub Buttons -->
