@@ -1,5 +1,5 @@
 <!-- markdownlint-disable-next-line first-line-heading -->
-- [Index](index)
+- [Index](introduction)
 - [Exports](export)
 - [Embeds](embeds)
 - **More**
