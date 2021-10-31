@@ -117,7 +117,3 @@ AddEventHandler('PlayTimeCheck', function()
     end
 end)
 ```
-
-?>If you disabled embeds the export will output the `EmbedMessage` as a normal message.
-
-!> If you disable embeds on a channel you will **NOT** be able to include player details or screenshots.
