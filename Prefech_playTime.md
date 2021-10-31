@@ -7,8 +7,6 @@
 ![Contributors](https://img.shields.io/github/contributors/Prefech/Prefech_playTime.png)
 [![Discord](https://discordapp.com/api/guilds/721339695199682611/widget.png)](https://discord.gg/prefech)
 
-[![Prefech_playTime](https://i.gyazo.com/3894b03d4351bcb566ec85afc7f9b231.png)](https://github.com/Prefech/Prefech_playTime)
-
 ## Requirements
 - FXServer
 
