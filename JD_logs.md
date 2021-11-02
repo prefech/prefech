@@ -13,6 +13,9 @@
 - A Discord Server
 - FXServer
 
+## Optional
+- Prefech_Notify
+
 ## Main Features
 - Basic logs:
   - Chat Logs (Messages typed in chat)
@@ -26,6 +29,11 @@
 - Logs with or without embeds.
 - Optional custom logs
   - Easy to add with the export.
+
+## Commands
+- `/logs [ID]`
+  - Will show you thr recent 5 logs made for that user.
+  - You can change what channels are kept in the log history.
 
 ## Download & Installation
 
