@@ -10,7 +10,7 @@ enableGitInfo = false
   author = "JokeDevil"
   showVisitedLinks = true
   themeVariant = "blue"
-  editURL = "https://github.com/Prefech/PrefechDocs/tree/master/content/"
+  editURL = "https://github.com/Prefech/Prefech/tree/master/content/"
 
 # For search functionality
 [outputs]
