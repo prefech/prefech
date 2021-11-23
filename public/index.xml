@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Prefech Documentation</title>
+    <link>https://prefech.github.io/PrefechDocs/</link>
+    <description>Recent content on Prefech Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 28 Jun 2018 16:39:00 +0200</lastBuildDate><atom:link href="https://prefech.github.io/PrefechDocs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Requirements</title>
+      <link>https://prefech.github.io/PrefechDocs/jd_logs/requirments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://prefech.github.io/PrefechDocs/jd_logs/requirments/</guid>
+      <description>Requirements  A Discord Server FXServer  Optional  Prefech_Notify  </description>
+    </item>
+    
+    <item>
+      <title>Features</title>
+      <link>https://prefech.github.io/PrefechDocs/jd_logs/features/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://prefech.github.io/PrefechDocs/jd_logs/features/</guid>
+      <description>Main Features  Basic logs:  Chat Logs (Messages typed in chat.) Join Logs (When i player is connecting to the sever.) Leave Logs (When a player disconnects from the server.) Death Logs (When a player dies/get killed.) Shooting Logs (When a player fires a weapon.) Resource Logs (When a resouce get started/stopped.) Explotion Logs (When a player creates an explotion.) Namechange Logs (When someone changes their steam name.)   Screenshot Logs (You can add screenshot of the players game to your logs.</description>
+    </item>
+    
+    <item>
+      <title>Commands</title>
+      <link>https://prefech.github.io/PrefechDocs/jd_logs/commands/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://prefech.github.io/PrefechDocs/jd_logs/commands/</guid>
+      <description>Commands    Name Example Usage     logs /logs 12 Will show you thr recent 5 logs made for that user (You can change what channels are kept in the log history.)    </description>
+    </item>
+    
+    <item>
+      <title>Export</title>
+      <link>https://prefech.github.io/PrefechDocs/jd_logs/export/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://prefech.github.io/PrefechDocs/jd_logs/export/</guid>
+      <description>To create custom logs you will need to add the export to the event/function or command you want to log.
+This is in the resource you want to log
+exports.JD_logs:createLog({ EmbedMessage = &amp;#34;EMBED MESSAGE&amp;#34;, color = &amp;#34;#FFFFFF&amp;#34;, player_id = SERVER_ID_PLAYER_ONE, player_2_id = SERVER_ID_PLAYER_TWO, channel = &amp;#34;CHANNEL FROM WEBHOOKS CONFIG&amp;#34;, screenshot = true })  EmbedMessage: This can be anything you want it to say.  You can even use variables in it as long as they contain a value.</description>
+    </item>
+    
+    <item>
+      <title>One Player Export</title>
+      <link>https://prefech.github.io/PrefechDocs/jd_logs/single/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://prefech.github.io/PrefechDocs/jd_logs/single/</guid>
+      <description>Using the export for one player!
+ player_id: is the variable that is used for getting the player info. player_2_id: isn&amp;rsquo;t used and therefore we can remove it from the export.  ?&amp;gt; for server-side resources player_id will be source on client-side this will be GetPlayerServerId(PlayerId())
+Keep in mind these might also change depending on the framework
+Example: (/me [Message]) RegisterCommand(&amp;#34;me&amp;#34;, function(source, args, rawCommand) TriggerClientEvent(&amp;#39;chatMessage&amp;#39;, -1, &amp;#34;ME | &amp;#34; .. GetPlayerName(source).</description>
+    </item>
+    
+    <item>
+      <title>Two Player Export</title>
+      <link>https://prefech.github.io/PrefechDocs/jd_logs/dual/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://prefech.github.io/PrefechDocs/jd_logs/dual/</guid>
+      <description>Using the export for two players!
+ player_id: is the variable that is used for getting the player info. player_2_id: this will be the server id of the second player to get their info.  player_2_id will be a server variable that is the server id of the second player
+Keep in mind these might also change depending on the framework
+Example: (/mention [PlayerID]) RegisterCommand(&amp;#34;mention&amp;#34;, function(source, args, rawCommand) TriggerClientEvent(&amp;#39;chatMessage&amp;#39;, -1, &amp;#34;Mention | &amp;#34; .</description>
+    </item>
+    
+  </channel>
+</rss>

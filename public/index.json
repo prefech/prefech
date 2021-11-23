@@ -1,0 +1,71 @@
+[
+{
+	"uri": "https://prefech.github.io/PrefechDocs/",
+	"title": "Prefech Documentation",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://prefech.github.io/PrefechDocs/jd_logs/",
+	"title": "JD_logs",
+	"tags": [],
+	"description": "",
+	"content": "\n   Pages     Requirements   Main Features   Commands   Export    "
+},
+{
+	"uri": "https://prefech.github.io/PrefechDocs/jd_logs/requirments/",
+	"title": "Requirements",
+	"tags": [],
+	"description": "",
+	"content": "Requirements  A Discord Server FXServer  Optional  Prefech_Notify  "
+},
+{
+	"uri": "https://prefech.github.io/PrefechDocs/jd_logs/features/",
+	"title": "Features",
+	"tags": [],
+	"description": "",
+	"content": "Main Features  Basic logs:  Chat Logs (Messages typed in chat.) Join Logs (When i player is connecting to the sever.) Leave Logs (When a player disconnects from the server.) Death Logs (When a player dies/get killed.) Shooting Logs (When a player fires a weapon.) Resource Logs (When a resouce get started/stopped.) Explotion Logs (When a player creates an explotion.) Namechange Logs (When someone changes their steam name.)   Screenshot Logs (You can add screenshot of the players game to your logs.) Logs with or without embeds. Optional custom logs  Easy to add with the export.    "
+},
+{
+	"uri": "https://prefech.github.io/PrefechDocs/jd_logs/commands/",
+	"title": "Commands",
+	"tags": [],
+	"description": "",
+	"content": "Commands    Name Example Usage     logs /logs 12 Will show you thr recent 5 logs made for that user (You can change what channels are kept in the log history.)    "
+},
+{
+	"uri": "https://prefech.github.io/PrefechDocs/jd_logs/export/",
+	"title": "Export",
+	"tags": [],
+	"description": "",
+	"content": "To create custom logs you will need to add the export to the event/function or command you want to log.\nThis is in the resource you want to log\nexports.JD_logs:createLog({ EmbedMessage = \u0026#34;EMBED MESSAGE\u0026#34;, color = \u0026#34;#FFFFFF\u0026#34;, player_id = SERVER_ID_PLAYER_ONE, player_2_id = SERVER_ID_PLAYER_TWO, channel = \u0026#34;CHANNEL FROM WEBHOOKS CONFIG\u0026#34;, screenshot = true })  EmbedMessage: This can be anything you want it to say.  You can even use variables in it as long as they contain a value.   color: This can be a decimal color or a hexadecimal. player_id: This will be the server id of the first player.  If you don\u0026rsquo;t have a first player you can remove this.   player_2_id: This will be the server id of the second player.  If you don\u0026rsquo;t have a second player you can remove this.   channel: This will be the channel you have set in the config/webhooks.json  This is NOT a webhook url you have to place that in the config/webhooks.json   screenshot: this can be either true or false it will add a screenshot to embeds  You need to have embeds enabled on the channel to see screenshots!    "
+},
+{
+	"uri": "https://prefech.github.io/PrefechDocs/jd_logs/single/",
+	"title": "One Player Export",
+	"tags": [],
+	"description": "",
+	"content": "Using the export for one player!\n player_id: is the variable that is used for getting the player info. player_2_id: isn\u0026rsquo;t used and therefore we can remove it from the export.  ?\u0026gt; for server-side resources player_id will be source on client-side this will be GetPlayerServerId(PlayerId())\nKeep in mind these might also change depending on the framework\nExample: (/me [Message]) RegisterCommand(\u0026#34;me\u0026#34;, function(source, args, rawCommand) TriggerClientEvent(\u0026#39;chatMessage\u0026#39;, -1, \u0026#34;ME | \u0026#34; .. GetPlayerName(source)..\u0026#34;: \u0026#34;..rawCommand:gsub(\u0026#34;me\u0026#34;, \u0026#34;\u0026#34;), { 201, 201, 201 }) exports.JD_logs:createLog({ EmbedMessage = \u0026#34;ME | \u0026#34; .. GetPlayerName(source)..\u0026#34;: \u0026#34;..rawCommand:gsub(\u0026#34;me\u0026#34;, \u0026#34;\u0026#34;), color = \u0026#34;#FFFFFF\u0026#34;, player_id = source, channel = \u0026#34;me\u0026#34;, screenshot = false }) end) EmbedMessage: This will be the /me message in this case\nplayer_id: In this use it will be source\nplayer_2_id: Since there is one player we have removed it\ncolor: This can be any color you want\nchannel: This will be linked to the webhook in the config.\nscreenshot: This can be true if you want the embed to include a screenshot.\n"
+},
+{
+	"uri": "https://prefech.github.io/PrefechDocs/jd_logs/dual/",
+	"title": "Two Player Export",
+	"tags": [],
+	"description": "",
+	"content": "Using the export for two players!\n player_id: is the variable that is used for getting the player info. player_2_id: this will be the server id of the second player to get their info.  player_2_id will be a server variable that is the server id of the second player\nKeep in mind these might also change depending on the framework\n\rExample: (/mention [PlayerID]) RegisterCommand(\u0026#34;mention\u0026#34;, function(source, args, rawCommand) TriggerClientEvent(\u0026#39;chatMessage\u0026#39;, -1, \u0026#34;Mention | \u0026#34; .. GetPlayerName(args[1]), { 201, 201, 201 }) exports.JD_logs:createLog({ EmbedMessage = \u0026#34;Mention | \u0026#34; .. GetPlayerName(args[1]), color = \u0026#34;#FFFFFF\u0026#34;, player_id = source, player_2_id = args[1], channel = \u0026#34;mention\u0026#34;, screenshot = false }) end) EmbedMessage: This will be the /mention message in this case\nplayer_id: In this use it will be source\nplayer_2_id: Since there is one player we have removed it\ncolor: This can be any color you want\nchannel: This will be linked to the webhook in the config.\nscreenshot: This can be true if you want the embed to include a screenshot.\n"
+},
+{
+	"uri": "https://prefech.github.io/PrefechDocs/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://prefech.github.io/PrefechDocs/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]
