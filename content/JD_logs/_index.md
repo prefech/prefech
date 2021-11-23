@@ -7,6 +7,7 @@ Pages |
 --- |
 [Requirements](./requirments) |
 [Main Features](./features) |
+[Installation](./installation) |
 [Commands](./commands) |
 [Export](./export) |
 
