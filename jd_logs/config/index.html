@@ -6,7 +6,7 @@
 <meta name=description content="Prefech Documentation">
 <meta name=author content="JokeDevil">
 <link rel=icon href=/images/favicon.png type=image/png>
-<title>Export :: Prefech Documentation</title>
+<title>Configuration :: Prefech Documentation</title>
 <link href=/css/nucleus.css?1639072385 rel=stylesheet>
 <link href=/css/fontawesome-all.min.css?1639072385 rel=stylesheet>
 <link href=/css/hybrid.css?1639072385 rel=stylesheet>
@@ -21,7 +21,7 @@
 <script src=/js/jquery-3.3.1.min.js?1639072385></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
-<body data-url=/notify/export/>
+<body data-url=/jd_logs/config/>
 <nav id=sidebar class=showVisitedLinks>
 <div id=header-wrapper>
 <div id=header>
@@ -48,7 +48,8 @@
 </section>
 <div class=highlightable>
 <ul class=topics>
-<li data-nav-id=/jd_logs/ title=JD_logs class=dd-item>
+<li data-nav-id=/jd_logs/ title=JD_logs class="dd-item
+parent">
 <a href=/jd_logs/>
 JD_logs
 <i class="fas fa-check read-icon"></i>
@@ -66,7 +67,7 @@ Features
 <i class="fas fa-check read-icon"></i>
 </a>
 </li>
-<li data-nav-id=/jd_logs/config/ title=Configuration class=dd-item>
+<li data-nav-id=/jd_logs/config/ title=Configuration class="dd-item active">
 <a href=/jd_logs/config/>
 Configuration
 <i class="fas fa-check read-icon"></i>
@@ -116,8 +117,7 @@ Embeds
 </li>
 </ul>
 </li>
-<li data-nav-id=/notify/ title=Notify class="dd-item
-parent">
+<li data-nav-id=/notify/ title=Notify class=dd-item>
 <a href=/notify/>
 Notify
 <i class="fas fa-check read-icon"></i>
@@ -135,7 +135,7 @@ Features
 <i class="fas fa-check read-icon"></i>
 </a>
 </li>
-<li data-nav-id=/notify/export/ title=Export class="dd-item active">
+<li data-nav-id=/notify/export/ title=Export class=dd-item>
 <a href=/notify/export/>
 Export
 <i class="fas fa-check read-icon"></i>
@@ -213,7 +213,7 @@ Export
 <div>
 <div id=top-bar>
 <div id=top-github-link>
-<a class=github-link title="Edit this page" href=https://github.com/Prefech/Prefech/tree/master/content/Notify/export.md target=blank>
+<a class=github-link title="Edit this page" href=https://github.com/Prefech/Prefech/tree/master/content/JD_logs/config.md target=blank>
 <i class="fas fa-code-branch"></i>
 <span id=top-github-link-text>Edit this page</span>
 </a>
@@ -226,7 +226,7 @@ Export
 </span>
 <span id=toc-menu><i class="fas fa-list-alt"></i></span>
 <span class=links>
-<a href=/>Prefech Documentation</a> > <a href=/notify/>Notify</a> > Export
+<a href=/>Prefech Documentation</a> > <a href=/jd_logs/>JD_logs</a> > Configuration
 </span>
 </div>
 <div class=progress>
@@ -240,43 +240,15 @@ Export
 </div>
 <div id=body-inner>
 <h1>
-Export
+Configuration
 </h1>
-<p>To create custom logs you will need to add the export to the event/function or command you want to log.
-This is in the resource you want to log</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua>exports.Prefech_Notify:Notify({
-  title <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;AWSOME TITLE&#34;</span>,
-  message <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;AWSOME MESSAGE&#34;</span>,
-  color <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;#93CAED&#34;</span>,
-  icon <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;fas fa-user&#34;</span>,
-  target <span style=color:#f92672>=</span> PLAYER_ID,
-  timeout <span style=color:#f92672>=</span> <span style=color:#ae81ff>10</span>
-})
-</code></pre></div><ul>
-<li><strong>title:</strong> This is the title you want the notification to have.
-<ul>
-<li>You can even use variables in it as long as they contain a value.</li>
-</ul>
-</li>
-<li><strong>message:</strong> This is the message you want to show.</li>
-<li><strong>color:</strong> This is a hexadecimal color.</li>
-<li><strong>icon:</strong> This is a fontawe some icon <a href="https://fontawesome.com/v6.0/icons?m=free">https://fontawesome.com/v6.0/icons?m=free</a></li>
-<li><strong>target:</strong> This will be the server id of the player you want to send the notification to.</li>
-<li><strong>timeout:</strong> This will be the time the notification will be shown
-<ul>
-<li>This is in seconds.</li>
-</ul>
-</li>
-</ul>
-<div class="notices info"><p>The target is only needed when you’re using the export server side.</p>
-</div>
 <footer class=footline>
 </footer>
 </div>
 </div>
 <div id=navigation>
-<a class="nav nav-prev" href=/notify/features/ title=Features> <i class="fa fa-chevron-left"></i></a>
-<a class="nav nav-next" href=/playtime/ title=PlayTime style=margin-right:0><i class="fa fa-chevron-right"></i></a>
+<a class="nav nav-prev" href=/jd_logs/features/ title=Features> <i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=/jd_logs/commands/ title=Commands style=margin-right:0><i class="fa fa-chevron-right"></i></a>
 </div>
 </section>
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
