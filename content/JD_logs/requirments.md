@@ -8,4 +8,6 @@ weight: 20
 - FXServer
 
 #### Optional
-- Prefech_Notify
+- Prefech_Notify (If you want to use the `/logs [id]` command.)
+- Prefech_playTime (If you want to use the Session and.or Playtime in the logs.)
+- screenshot-basic (If you want to use screenshot logs or want to use the `/screenshot [id]` command.)
