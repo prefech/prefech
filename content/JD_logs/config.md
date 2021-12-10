@@ -54,6 +54,7 @@ When you just installed JD_logs your config should look like this:
         "WEAPON_SNOWBALL",
         "WEAPON_FIREEXTINGUISHER"
     ]
+}
 ```
 
 #### Config settings:
