@@ -9,7 +9,6 @@ This is in the resource you want to log
 ```lua
 exports.JD_logs:createLog({
     EmbedMessage = "EMBED MESSAGE",
-    color = "#FFFFFF",
     player_id = SERVER_ID_PLAYER_ONE,
     player_2_id = SERVER_ID_PLAYER_TWO,
     channel = "CHANNEL FROM WEBHOOKS CONFIG",
@@ -19,7 +18,6 @@ exports.JD_logs:createLog({
 
 - **EmbedMessage:** This can be anything you want it to say.
   - You can even use variables in it as long as they contain a value.
-- **color:** This can be a decimal color or a hexadecimal.
 - **player_id:** This will be the server id of the first player.
   - If you don't have a first player you can remove this.
 - **player_2_id:** This will be the server id of the second player.
