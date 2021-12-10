@@ -20,7 +20,6 @@ RegisterCommand("mention", function(source, args, rawCommand)
     TriggerClientEvent('chatMessage', -1, "Mention | " .. GetPlayerName(args[1]), { 201, 201, 201 })
     exports.JD_logs:createLog({
         EmbedMessage = "Mention | " .. GetPlayerName(args[1]),
-        color = "#FFFFFF",
         player_id = source,
         player_2_id = args[1],
         channel = "mention",
@@ -32,6 +31,5 @@ end)
 **EmbedMessage:** This will be the /mention message in this case  
 **player_id:** In this use it will be source  
 **player_2_id:** Since there is one player we have removed it  
-**color:** This can be any color you want  
 **channel:** This will be linked to the webhook in the config.  
 **screenshot:** This can be true if you want the embed to include a screenshot.  
