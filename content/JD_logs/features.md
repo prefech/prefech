@@ -18,3 +18,9 @@ weight: 30
 - Logs with or without embeds.
 - Optional custom logs
     - Easy to add with the export.
+- Global ban list to keep those known cheaters out!
+- Anti cheat functions
+    - Blacklisted Vehicles (Keep everyone out of certain vehicles.)
+    - Blacklisted Commands (To make sure people don't inject their own "fancy" commands.)
+    - Blacklisted Objects (Get those racing ramps off your server!)
+    - Blacklisted Keys (Opening a mod menu? lets screenshot that!)
