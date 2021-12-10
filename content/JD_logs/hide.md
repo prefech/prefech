@@ -16,7 +16,6 @@ RegisterCommand("tweet", function(source, args, rawCommand)
     TriggerClientEvent('chatMessage', -1, "Tweet | " .. GetPlayerName(source)..": "..rawCommand:gsub("tweet ", ""), { 201, 201, 201 })
     exports.JD_logs:createLog({
         EmbedMessage = "Tweet | " .. GetPlayerName(source)..": "..rawCommand:gsub("tweet ", ""),
-        color = "#FFFFFF",
         channel = "tweet",
         screenshot = false
     })
