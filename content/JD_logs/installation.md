@@ -12,9 +12,9 @@ weight: 45
 ```
 ensure JD_logs
 ```
-4. Navigate to the config file: **json/config.json**.
+4. Navigate to the config file: **config/config.json**.
 5. Update the settings in the config to your liking.
-6. Navigate to the webhooks file: **json/webhooks.json**.
+6. Navigate to the webhooks file: **config/webhooks.json**.
 7. Add webhooks from discord and set the channel options to your liking
     - Not sure how to make a webhook have a look here: https://forum.prefech.com/d/17-creating-discord-webhooks
 8. Restart your server and you should see the logs on your discord.
