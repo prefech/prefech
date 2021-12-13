@@ -15,14 +15,15 @@ JD_WhitelistV2 | | [Github](https://github.com/prefech/JD_WhitelistV2) |
 JD_WordFilter | | [Github](https://github.com/prefech/JD_WordFilter) |
 JD_Report | | [Github](https://github.com/prefech/JD_Report) |
 JD_Prison |  | [Github](https://github.com/prefech/JD_Prison) |
-JD_RPChat | | [Github](https://github.com/prefech/JD_RPChat) |
 JD_ServerMeeting | | [Github](https://github.com/prefech/JD_ServerMeeting) |
 ALPR | | [Github](https://github.com/prefech/Prefech_ALPR) |
 PlayTime | [Docs](./playtime/) | [Github](https://github.com/prefech/Prefech_playTime) |
 Notify | [Docs](./notify/) | [Github](https://github.com/prefech/Prefech_Notify) |
 DonatorLock | | [Github](https://github.com/prefech/Prefech_DonatorLock) |
+RPChat | [Docs](./rpchat/) | [Tebex](https://prefech.tebex.io/package/4832919)
 
 Deprecated Resources |
 --- |
 JD_PermCheck |
 JD_vehWhitelist |
+JD_RPChat |
