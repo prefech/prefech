@@ -7,18 +7,18 @@
 <meta name=author content="JokeDevil">
 <link rel=icon href=/images/favicon.png type=image/png>
 <title>Export :: Prefech Documentation</title>
-<link href=/css/nucleus.css?1639418415 rel=stylesheet>
-<link href=/css/fontawesome-all.min.css?1639418415 rel=stylesheet>
-<link href=/css/hybrid.css?1639418415 rel=stylesheet>
-<link href=/css/featherlight.min.css?1639418415 rel=stylesheet>
-<link href=/css/perfect-scrollbar.min.css?1639418415 rel=stylesheet>
-<link href=/css/auto-complete.css?1639418415 rel=stylesheet>
-<link href=/css/atom-one-dark-reasonable.css?1639418415 rel=stylesheet>
-<link href=/css/theme.css?1639418415 rel=stylesheet>
-<link href=/css/tabs.css?1639418415 rel=stylesheet>
-<link href=/css/hugo-theme.css?1639418415 rel=stylesheet>
-<link href=/css/theme-blue.css?1639418415 rel=stylesheet>
-<script src=/js/jquery-3.3.1.min.js?1639418415></script>
+<link href=/css/nucleus.css?1639418820 rel=stylesheet>
+<link href=/css/fontawesome-all.min.css?1639418820 rel=stylesheet>
+<link href=/css/hybrid.css?1639418820 rel=stylesheet>
+<link href=/css/featherlight.min.css?1639418820 rel=stylesheet>
+<link href=/css/perfect-scrollbar.min.css?1639418820 rel=stylesheet>
+<link href=/css/auto-complete.css?1639418820 rel=stylesheet>
+<link href=/css/atom-one-dark-reasonable.css?1639418820 rel=stylesheet>
+<link href=/css/theme.css?1639418820 rel=stylesheet>
+<link href=/css/tabs.css?1639418820 rel=stylesheet>
+<link href=/css/hugo-theme.css?1639418820 rel=stylesheet>
+<link href=/css/theme-blue.css?1639418820 rel=stylesheet>
+<script src=/js/jquery-3.3.1.min.js?1639418820></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=/rpchat/export/>
@@ -34,10 +34,10 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script type=text/javascript src=/js/lunr.min.js?1639418415></script>
-<script type=text/javascript src=/js/auto-complete.js?1639418415></script>
+<script type=text/javascript src=/js/lunr.min.js?1639418820></script>
+<script type=text/javascript src=/js/auto-complete.js?1639418820></script>
 <script type=text/javascript>var baseurl="https://docs.prefech.com/"</script>
-<script type=text/javascript src=/js/search.js?1639418415></script>
+<script type=text/javascript src=/js/search.js?1639418820></script>
 </div>
 <section id=homelinks>
 <ul>
@@ -267,7 +267,10 @@ Export
 <ul>
 <li>
 <ul>
-<li><a href=#usage-examples>Usage Examples</a></li>
+<li><a href=#hook-into-staff-chat-with-another-resource>Hook into staff chat with another resource.</a></li>
+<li><a href=#send-system-messaages-from-any-resource>Send System messaages from any resource.</a></li>
+<li><a href=#send-announcements-from-any-resource>Send announcements from any resource.</a></li>
+<li><a href=#custom-messages-in-chat>Custom messages in chat.</a></li>
 </ul>
 </li>
 </ul>
@@ -282,69 +285,30 @@ Export
 <h1>
 Export
 </h1>
-<p>The export will return a table with the player’s session time and the player’s total play time.
-For example source is the player id and we want to check their time played on the server.
-We will run the export in our function like this:</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=color:#66d9ef>local</span> playtime <span style=color:#f92672>=</span> exports.Prefech_PlayTime:getPlayTime(source)
-</code></pre></div><p>Now the variable playtime will be a table.
-The table will include both the session and total playtime.</p>
-<ul>
-<li>Session time in the table is named Session</li>
-<li>Total playtime in the table is named Total</li>
-</ul>
-<p>The table returns the Total and Session playtime in seconds.</p>
-<p>To get the playtime you simply have to grab the value from the table and check if it has been at least 5 minutes since they connected.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=color:#66d9ef>if</span> playtime.Session <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>300</span> <span style=color:#66d9ef>then</span>
-  print(<span style=color:#e6db74>&#39;They have been online for 5 minutes or longer&#39;</span>)
-<span style=color:#66d9ef>else</span>
-  print(<span style=color:#e6db74>&#39;They have been online less than 5 minutes&#39;</span>)
-<span style=color:#66d9ef>end</span>
-</code></pre></div><p>Now i used 300 since that is 5 minutes in seconds.
-The export returns the playtime in seconds so you can convert it to minutes or hours.</p>
-<p>Now to put it together our code will look like this:</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=color:#66d9ef>local</span> playtime <span style=color:#f92672>=</span> exports.Prefech_PlayTime:getPlayTime(source)
-<span style=color:#66d9ef>if</span> playtime.Session <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>300</span> <span style=color:#66d9ef>then</span>
-  print(<span style=color:#e6db74>&#39;They have been online for 5 minutes or longer&#39;</span>)
-<span style=color:#66d9ef>else</span>
-  print(<span style=color:#e6db74>&#39;They have been online less than 5 minutes&#39;</span>)
-<span style=color:#66d9ef>end</span>
-</code></pre></div><h3 id=usage-examples>Usage Examples</h3>
-<h5 id=client-side-total-playtime-example>Client side total playtime example</h5>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua>RegisterNetEvent(<span style=color:#e6db74>&#39;PlayTimeCheck&#39;</span>)
-AddEventHandler(<span style=color:#e6db74>&#39;PlayTimeCheck&#39;</span>, <span style=color:#66d9ef>function</span>()
-    <span style=color:#66d9ef>if</span> exports.Prefech_PlayTime:getPlayTime(GetPlayerServerId(PlayerId())).Total <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>600</span> <span style=color:#66d9ef>then</span>
-        <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>true</span>
-    <span style=color:#66d9ef>else</span>
-        <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>false</span>
-    <span style=color:#66d9ef>end</span>
-<span style=color:#66d9ef>end</span>)
-</code></pre></div><h5 id=server-side-total-playtime-example>Server side total playtime example</h5>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua>RegisterNetEvent(<span style=color:#e6db74>&#39;PlayTimeCheck&#39;</span>)
-AddEventHandler(<span style=color:#e6db74>&#39;PlayTimeCheck&#39;</span>, <span style=color:#66d9ef>function</span>()
-    <span style=color:#66d9ef>if</span> exports.Prefech_PlayTime:getPlayTime(source).Total <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>600</span> <span style=color:#66d9ef>then</span>
-        <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>true</span>
-    <span style=color:#66d9ef>else</span>
-        <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>false</span>
-    <span style=color:#66d9ef>end</span>
-<span style=color:#66d9ef>end</span>)
-</code></pre></div><h5 id=client-side-session-playtime-example>Client side session playtime example</h5>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua>RegisterNetEvent(<span style=color:#e6db74>&#39;PlayTimeCheck&#39;</span>)
-AddEventHandler(<span style=color:#e6db74>&#39;PlayTimeCheck&#39;</span>, <span style=color:#66d9ef>function</span>()
-    <span style=color:#66d9ef>if</span> exports.Prefech_PlayTime:getPlayTime(GetPlayerServerId(PlayerId())).Session <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>600</span> <span style=color:#66d9ef>then</span>
-        <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>true</span>
-    <span style=color:#66d9ef>else</span>
-        <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>false</span>
-    <span style=color:#66d9ef>end</span>
-<span style=color:#66d9ef>end</span>)
-</code></pre></div><h5 id=server-side-session-playtime-example>Server side session playtime example</h5>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua>RegisterNetEvent(<span style=color:#e6db74>&#39;PlayTimeCheck&#39;</span>)
-AddEventHandler(<span style=color:#e6db74>&#39;PlayTimeCheck&#39;</span>, <span style=color:#66d9ef>function</span>()
-    <span style=color:#66d9ef>if</span> exports.Prefech_PlayTime:getPlayTime(source).Session <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>600</span> <span style=color:#66d9ef>then</span>
-        <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>true</span>
-    <span style=color:#66d9ef>else</span>
-        <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>false</span>
-    <span style=color:#66d9ef>end</span>
-<span style=color:#66d9ef>end</span>)
+<p>The exports work both client and server side.</p>
+<h3 id=hook-into-staff-chat-with-another-resource>Hook into staff chat with another resource.</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua>exports.Prefech_RPChat_Dev:TriggerMessage({ 
+    type <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;staff&#39;</span>, 
+    message <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;This is a staff message from a Server script.&#39;</span>
+})
+</code></pre></div><h3 id=send-system-messaages-from-any-resource>Send System messaages from any resource.</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua>exports.Prefech_RPChat_Dev:TriggerMessage({ 
+    type <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;system&#39;</span>, 
+    message <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;This is a system message from a Server script.&#39;</span>
+})
+</code></pre></div><h3 id=send-announcements-from-any-resource>Send announcements from any resource.</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua>exports.Prefech_RPChat_Dev:TriggerMessage({ 
+    type <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;announcement&#39;</span>, 
+    message <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;This is a system message from a Server script.&#39;</span>
+})
+</code></pre></div><h3 id=custom-messages-in-chat>Custom messages in chat.</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua>exports.Prefech_RPChat:CustomTriggerMessage({ 
+    type <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;ambulance&#39;</span>, 
+    message <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;JokeDevil has been transported to the Hospital.&#39;</span>,
+    icon <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;fas fa-ambulance&#39;</span>,
+    color <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;190, 213, 90&#39;</span>,
+    name <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;Ambulance&#39;</span>
+})
 </code></pre></div>
 <footer class=footline>
 </footer>
@@ -358,17 +322,17 @@ AddEventHandler(<span style=color:#e6db74>&#39;PlayTimeCheck&#39;</span>, <span 
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=/js/clipboard.min.js?1639418415></script>
-<script src=/js/perfect-scrollbar.min.js?1639418415></script>
-<script src=/js/perfect-scrollbar.jquery.min.js?1639418415></script>
-<script src=/js/jquery.sticky.js?1639418415></script>
-<script src=/js/featherlight.min.js?1639418415></script>
-<script src=/js/highlight.pack.js?1639418415></script>
+<script src=/js/clipboard.min.js?1639418820></script>
+<script src=/js/perfect-scrollbar.min.js?1639418820></script>
+<script src=/js/perfect-scrollbar.jquery.min.js?1639418820></script>
+<script src=/js/jquery.sticky.js?1639418820></script>
+<script src=/js/featherlight.min.js?1639418820></script>
+<script src=/js/highlight.pack.js?1639418820></script>
 <script>hljs.initHighlightingOnLoad()</script>
-<script src=/js/modernizr.custom-3.6.0.js?1639418415></script>
-<script src=/js/learn.js?1639418415></script>
-<script src=/js/hugo-learn.js?1639418415></script>
-<script src=/mermaid/mermaid.js?1639418415></script>
+<script src=/js/modernizr.custom-3.6.0.js?1639418820></script>
+<script src=/js/learn.js?1639418820></script>
+<script src=/js/hugo-learn.js?1639418820></script>
+<script src=/mermaid/mermaid.js?1639418820></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
 </body>
 </html>
