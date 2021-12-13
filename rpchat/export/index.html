@@ -6,7 +6,7 @@
 <meta name=description content="Prefech Documentation">
 <meta name=author content="JokeDevil">
 <link rel=icon href=/images/favicon.png type=image/png>
-<title>PlayTime :: Prefech Documentation</title>
+<title>Export :: Prefech Documentation</title>
 <link href=/css/nucleus.css?1639418415 rel=stylesheet>
 <link href=/css/fontawesome-all.min.css?1639418415 rel=stylesheet>
 <link href=/css/hybrid.css?1639418415 rel=stylesheet>
@@ -21,7 +21,7 @@
 <script src=/js/jquery-3.3.1.min.js?1639418415></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
-<body data-url=/playtime/>
+<body data-url=/rpchat/export/>
 <nav id=sidebar class=showVisitedLinks>
 <div id=header-wrapper>
 <div id=header>
@@ -142,9 +142,7 @@ Export
 </li>
 </ul>
 </li>
-<li data-nav-id=/playtime/ title=PlayTime class="dd-item
-parent
-active">
+<li data-nav-id=/playtime/ title=PlayTime class=dd-item>
 <a href=/playtime/>
 PlayTime
 <i class="fas fa-check read-icon"></i>
@@ -176,7 +174,8 @@ Export
 </li>
 </ul>
 </li>
-<li data-nav-id=/rpchat/ title=RPChat class=dd-item>
+<li data-nav-id=/rpchat/ title=RPChat class="dd-item
+parent">
 <a href=/rpchat/>
 RPChat
 <i class="fas fa-check read-icon"></i>
@@ -200,7 +199,7 @@ Commands
 <i class="fas fa-check read-icon"></i>
 </a>
 </li>
-<li data-nav-id=/rpchat/export/ title=Export class=dd-item>
+<li data-nav-id=/rpchat/export/ title=Export class="dd-item active">
 <a href=/rpchat/export/>
 Export
 <i class="fas fa-check read-icon"></i>
@@ -246,7 +245,7 @@ Export
 <div>
 <div id=top-bar>
 <div id=top-github-link>
-<a class=github-link title="Edit this page" href=https://github.com/Prefech/Prefech/tree/master/content/PlayTime/_index.md target=blank>
+<a class=github-link title="Edit this page" href=https://github.com/Prefech/Prefech/tree/master/content/RPChat/export.md target=blank>
 <i class="fas fa-code-branch"></i>
 <span id=top-github-link-text>Edit this page</span>
 </a>
@@ -259,12 +258,20 @@ Export
 </span>
 <span id=toc-menu><i class="fas fa-list-alt"></i></span>
 <span class=links>
-<a href=/>Prefech Documentation</a> > PlayTime
+<a href=/>Prefech Documentation</a> > <a href=/rpchat/>RPChat</a> > Export
 </span>
 </div>
 <div class=progress>
 <div class=wrapper>
-<nav id=TableOfContents></nav>
+<nav id=TableOfContents>
+<ul>
+<li>
+<ul>
+<li><a href=#usage-examples>Usage Examples</a></li>
+</ul>
+</li>
+</ul>
+</nav>
 </div>
 </div>
 </div>
@@ -273,48 +280,79 @@ Export
 </div>
 <div id=body-inner>
 <h1>
-PlayTime
+Export
 </h1>
-<table>
-<thead>
-<tr>
-<th>Pages</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href=./requirments>Requirements</a></td>
-</tr>
-<tr>
-<td><a href=./features>Main Features</a></td>
-</tr>
-<tr>
-<td><a href=./commands>Commands</a></td>
-</tr>
-<tr>
-<td><a href=./export>Export</a></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>Downloads</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href=https://github.com/prefech/Prefech_playTime/releases/latest>Latest Version</a></td>
-</tr>
-</tbody>
-</table>
+<p>The export will return a table with the player’s session time and the player’s total play time.
+For example source is the player id and we want to check their time played on the server.
+We will run the export in our function like this:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=color:#66d9ef>local</span> playtime <span style=color:#f92672>=</span> exports.Prefech_PlayTime:getPlayTime(source)
+</code></pre></div><p>Now the variable playtime will be a table.
+The table will include both the session and total playtime.</p>
+<ul>
+<li>Session time in the table is named Session</li>
+<li>Total playtime in the table is named Total</li>
+</ul>
+<p>The table returns the Total and Session playtime in seconds.</p>
+<p>To get the playtime you simply have to grab the value from the table and check if it has been at least 5 minutes since they connected.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=color:#66d9ef>if</span> playtime.Session <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>300</span> <span style=color:#66d9ef>then</span>
+  print(<span style=color:#e6db74>&#39;They have been online for 5 minutes or longer&#39;</span>)
+<span style=color:#66d9ef>else</span>
+  print(<span style=color:#e6db74>&#39;They have been online less than 5 minutes&#39;</span>)
+<span style=color:#66d9ef>end</span>
+</code></pre></div><p>Now i used 300 since that is 5 minutes in seconds.
+The export returns the playtime in seconds so you can convert it to minutes or hours.</p>
+<p>Now to put it together our code will look like this:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua><span style=color:#66d9ef>local</span> playtime <span style=color:#f92672>=</span> exports.Prefech_PlayTime:getPlayTime(source)
+<span style=color:#66d9ef>if</span> playtime.Session <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>300</span> <span style=color:#66d9ef>then</span>
+  print(<span style=color:#e6db74>&#39;They have been online for 5 minutes or longer&#39;</span>)
+<span style=color:#66d9ef>else</span>
+  print(<span style=color:#e6db74>&#39;They have been online less than 5 minutes&#39;</span>)
+<span style=color:#66d9ef>end</span>
+</code></pre></div><h3 id=usage-examples>Usage Examples</h3>
+<h5 id=client-side-total-playtime-example>Client side total playtime example</h5>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua>RegisterNetEvent(<span style=color:#e6db74>&#39;PlayTimeCheck&#39;</span>)
+AddEventHandler(<span style=color:#e6db74>&#39;PlayTimeCheck&#39;</span>, <span style=color:#66d9ef>function</span>()
+    <span style=color:#66d9ef>if</span> exports.Prefech_PlayTime:getPlayTime(GetPlayerServerId(PlayerId())).Total <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>600</span> <span style=color:#66d9ef>then</span>
+        <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>true</span>
+    <span style=color:#66d9ef>else</span>
+        <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>false</span>
+    <span style=color:#66d9ef>end</span>
+<span style=color:#66d9ef>end</span>)
+</code></pre></div><h5 id=server-side-total-playtime-example>Server side total playtime example</h5>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua>RegisterNetEvent(<span style=color:#e6db74>&#39;PlayTimeCheck&#39;</span>)
+AddEventHandler(<span style=color:#e6db74>&#39;PlayTimeCheck&#39;</span>, <span style=color:#66d9ef>function</span>()
+    <span style=color:#66d9ef>if</span> exports.Prefech_PlayTime:getPlayTime(source).Total <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>600</span> <span style=color:#66d9ef>then</span>
+        <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>true</span>
+    <span style=color:#66d9ef>else</span>
+        <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>false</span>
+    <span style=color:#66d9ef>end</span>
+<span style=color:#66d9ef>end</span>)
+</code></pre></div><h5 id=client-side-session-playtime-example>Client side session playtime example</h5>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua>RegisterNetEvent(<span style=color:#e6db74>&#39;PlayTimeCheck&#39;</span>)
+AddEventHandler(<span style=color:#e6db74>&#39;PlayTimeCheck&#39;</span>, <span style=color:#66d9ef>function</span>()
+    <span style=color:#66d9ef>if</span> exports.Prefech_PlayTime:getPlayTime(GetPlayerServerId(PlayerId())).Session <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>600</span> <span style=color:#66d9ef>then</span>
+        <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>true</span>
+    <span style=color:#66d9ef>else</span>
+        <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>false</span>
+    <span style=color:#66d9ef>end</span>
+<span style=color:#66d9ef>end</span>)
+</code></pre></div><h5 id=server-side-session-playtime-example>Server side session playtime example</h5>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua>RegisterNetEvent(<span style=color:#e6db74>&#39;PlayTimeCheck&#39;</span>)
+AddEventHandler(<span style=color:#e6db74>&#39;PlayTimeCheck&#39;</span>, <span style=color:#66d9ef>function</span>()
+    <span style=color:#66d9ef>if</span> exports.Prefech_PlayTime:getPlayTime(source).Session <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>600</span> <span style=color:#66d9ef>then</span>
+        <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>true</span>
+    <span style=color:#66d9ef>else</span>
+        <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>false</span>
+    <span style=color:#66d9ef>end</span>
+<span style=color:#66d9ef>end</span>)
+</code></pre></div>
 <footer class=footline>
 </footer>
 </div>
 </div>
 <div id=navigation>
-<a class="nav nav-prev" href=/notify/export/ title=Export> <i class="fa fa-chevron-left"></i></a>
-<a class="nav nav-next" href=/playtime/requirments/ title=Requirements style=margin-right:0><i class="fa fa-chevron-right"></i></a>
+<a class="nav nav-prev" href=/rpchat/commands/ title=Commands> <i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=/rpchat/requirments/ title=Requirements style=margin-right:0><i class="fa fa-chevron-right"></i></a>
 </div>
 </section>
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
