@@ -28,13 +28,15 @@ Config.ChatModes = {
 }
 
 Config.Channels = {
-    { name = 'system', range = 'global', icon = 'fas fa-cog', color = '#FFA500'},
-    { name = 'announce', range = 'global', icon = 'fas fa-bullhorn', color = '#8A2BE2'},
-    { name = 'Me', range = 19.999, icon = 'fas fa-user', color = '#3CB371'},
-    { name = 'Tweet', range = 'global', icon = 'fab fa-twitter', color = '#1DA1F2'},
-    { name = 'Staff', range = 'global', icon = 'fas fa-shield-alt', color = '#B22222'},
-    { name = '', range = 'global', icon = 'fas fa-globe-europe', color = '#808080'}
+    { name = 'system', range = 'global', icon = 'fas fa-cog', color = '#FFA500', toggle = false},
+    { name = 'announce', range = 'global', icon = 'fas fa-bullhorn', color = '#8A2BE2', toggle = false},
+    { name = 'Me', range = 19.999, icon = 'fas fa-user', color = '#3CB371', toggle = true},
+    { name = 'Tweet', range = 'global', icon = 'fab fa-twitter', color = '#1DA1F2', toggle = true},
+    { name = 'Staff', range = 'global', icon = 'fas fa-shield-alt', color = '#B22222', toggle = false},
+    { name = '', range = 'global', icon = 'fas fa-globe-europe', color = '#808080', toggle = false}
 }
+
+Config.ToggleChannels = true
 
 Config.Sounds = {
     system = true,
@@ -71,3 +73,4 @@ name | yes | the name for the channel to use in modes or commands. |
 range | yes | this can either be a number or `global.|
 icon | yes | this is an icon that will be displayed in front of the username. (https://fontawesome.com/v5.9/icons/)|
 color | yes | this will be the coler added to the message.|
+toggle | no | this will allow your players to hide this chat channel. |
