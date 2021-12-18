@@ -8,7 +8,7 @@ The exports work both client and server side.
 ### Hook into staff chat with another resource.
 ```lua
 exports.Prefech_RPChat:TriggerMessage({ 
-    type = 'staff', 
+    type = 'Staff', 
     message = 'This is a staff message from a Server script.'
 })
 ```
@@ -22,7 +22,7 @@ exports.Prefech_RPChat:TriggerMessage({
 ### Send announcements from any resource.
 ```lua
 exports.Prefech_RPChat:TriggerMessage({ 
-    type = 'announcement', 
+    type = 'announce', 
     message = 'This is a system message from a Server script.'
 })
 ```
@@ -30,7 +30,7 @@ exports.Prefech_RPChat:TriggerMessage({
 ### Custom messages in chat.
 ```lua
 exports.Prefech_RPChat:CustomTriggerMessage({ 
-    type = 'ambulance', 
+    target = source,
     message = 'JokeDevil has been transported to the Hospital.',
     icon = 'fas fa-ambulance',
     color = '190, 213, 90',

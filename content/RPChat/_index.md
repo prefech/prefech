@@ -8,6 +8,7 @@ Pages |
 [Requirements](./requirments) |
 [Main Features](./features) |
 [Commands](./commands) |
+[Config](./config) |
 [Export](./export) |
 
 Downloads | 
