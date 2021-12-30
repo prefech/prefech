@@ -12,7 +12,7 @@ exports.Prefech_RPChat:TriggerMessage({
     message = 'This is a staff message from a Server script.'
 })
 ```
-### Send System messaages from any resource.
+### Send System messages from any resource.
 ```lua
 exports.Prefech_RPChat:TriggerMessage({ 
     type = 'system', 
