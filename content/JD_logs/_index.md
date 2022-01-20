@@ -8,8 +8,10 @@ Pages |
 [Requirements](./requirments) |
 [Main Features](./features) |
 [Installation](./installation) |
+[Configuation](./config) |
 [Commands](./commands) |
 [Export](./export) |
+[Global Ban Sync](./gbansync) |
 
 Downloads |
 --- |
