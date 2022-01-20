@@ -6,7 +6,7 @@
 <meta name=description content="Prefech Documentation">
 <meta name=author content="JokeDevil">
 <link rel=icon href=/images/favicon.png type=image/png>
-<title>Two Player Export :: Prefech Documentation</title>
+<title>Global Ban Sync :: Prefech Documentation</title>
 <link href=/css/nucleus.css?1642691639 rel=stylesheet>
 <link href=/css/fontawesome-all.min.css?1642691639 rel=stylesheet>
 <link href=/css/hybrid.css?1642691639 rel=stylesheet>
@@ -21,7 +21,7 @@
 <script src=/js/jquery-3.3.1.min.js?1642691639></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
-<body data-url=/jd_logs/dual/>
+<body data-url=/jd_logs/gbansync/>
 <nav id=sidebar class=showVisitedLinks>
 <div id=header-wrapper>
 <div id=header>
@@ -103,13 +103,13 @@ One Player Export
 <i class="fas fa-check read-icon"></i>
 </a>
 </li>
-<li data-nav-id=/jd_logs/dual/ title="Two Player Export" class="dd-item active">
+<li data-nav-id=/jd_logs/dual/ title="Two Player Export" class=dd-item>
 <a href=/jd_logs/dual/>
 Two Player Export
 <i class="fas fa-check read-icon"></i>
 </a>
 </li>
-<li data-nav-id=/jd_logs/gbansync/ title="Global Ban Sync" class=dd-item>
+<li data-nav-id=/jd_logs/gbansync/ title="Global Ban Sync" class="dd-item active">
 <a href=/jd_logs/gbansync/>
 Global Ban Sync
 <i class="fas fa-check read-icon"></i>
@@ -257,7 +257,7 @@ Export
 <div>
 <div id=top-bar>
 <div id=top-github-link>
-<a class=github-link title="Edit this page" href=https://github.com/Prefech/Prefech/tree/master/content/JD_logs/dual.md target=blank>
+<a class=github-link title="Edit this page" href=https://github.com/Prefech/Prefech/tree/master/content/JD_logs/gbansync.md target=blank>
 <i class="fas fa-code-branch"></i>
 <span id=top-github-link-text>Edit this page</span>
 </a>
@@ -270,20 +270,12 @@ Export
 </span>
 <span id=toc-menu><i class="fas fa-list-alt"></i></span>
 <span class=links>
-<a href=/>Prefech Documentation</a> > <a href=/jd_logs/>JD_logs</a> > Two Player Export
+<a href=/>Prefech Documentation</a> > <a href=/jd_logs/>JD_logs</a> > Global Ban Sync
 </span>
 </div>
 <div class=progress>
 <div class=wrapper>
-<nav id=TableOfContents>
-<ul>
-<li>
-<ul>
-<li><a href=#example-mention-playerid>Example: (/mention [PlayerID])</a></li>
-</ul>
-</li>
-</ul>
-</nav>
+<nav id=TableOfContents></nav>
 </div>
 </div>
 </div>
@@ -292,39 +284,54 @@ Export
 </div>
 <div id=body-inner>
 <h1>
-Two Player Export
+Global Ban Sync
 </h1>
-<p>Using the export for two players!</p>
-<ul>
-<li><strong>player_id:</strong> is the variable that is used for getting the player info.</li>
-<li><strong>player_2_id:</strong> this will be the server id of the second player to get their info.</li>
-</ul>
-<div class="notices info"><p><strong>player_2_id</strong> will be a server variable that is the server id of the second player<br>
-<em>Keep in mind these might also change depending on the framework</em></p>
-</div>
-<h3 id=example-mention-playerid>Example: (/mention [PlayerID])</h3>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-lua data-lang=lua>RegisterCommand(<span style=color:#e6db74>&#34;mention&#34;</span>, <span style=color:#66d9ef>function</span>(source, args, rawCommand)
-    TriggerClientEvent(<span style=color:#e6db74>&#39;chatMessage&#39;</span>, <span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>, <span style=color:#e6db74>&#34;Mention | &#34;</span> <span style=color:#f92672>..</span> GetPlayerName(args[<span style=color:#ae81ff>1</span>]), { <span style=color:#ae81ff>201</span>, <span style=color:#ae81ff>201</span>, <span style=color:#ae81ff>201</span> })
-    exports.JD_logs:createLog({
-        EmbedMessage <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;Mention | &#34;</span> <span style=color:#f92672>..</span> GetPlayerName(args[<span style=color:#ae81ff>1</span>]),
-        player_id <span style=color:#f92672>=</span> source,
-        player_2_id <span style=color:#f92672>=</span> args[<span style=color:#ae81ff>1</span>],
-        channel <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;mention&#34;</span>,
-        screenshot <span style=color:#f92672>=</span> <span style=color:#66d9ef>false</span>
-    })
-<span style=color:#66d9ef>end</span>)
-</code></pre></div><p><strong>EmbedMessage:</strong> This will be the /mention message in this case<br>
-<strong>player_id:</strong> In this use it will be source<br>
-<strong>player_2_id:</strong> Since there is one player we have removed it<br>
-<strong>channel:</strong> This will be linked to the webhook in the config.<br>
-<strong>screenshot:</strong> This can be true if you want the embed to include a screenshot.</p>
+<p><img src=https://prefech.com/i/GbanBanner.png alt=Banner></p>
+<blockquote>
+<p>Want to keep your discord clean the same way as your server?<br>
+You can now sync Global bans with your discord!<br>
+Our goal is to not only keep your server clean of hackers but also your discord!</p>
+</blockquote>
+<p><img src=https://prefech.com/i/kickban.png alt=kickban></p>
+<blockquote>
+<p>You can decide yourself if you want to kick them off your discord or just ban them.<br>
+Use the command /banuser to change the setting.<br>
+By default the bot will only kick global banned players from your discord.</p>
+</blockquote>
+<p><img src=https://prefech.com/i/check.png alt=check></p>
+<blockquote>
+<p>Want to know is someone is on the global ban list?<br>
+You can use the /check command to see if they are banned!<br>
+You can use the command with any identifier with or without prefix!<br>
+The bot will find the ban linked to the identifier if there is one and give you the ban reason.</p>
+<p><strong>Example:</strong><br>
+You can use <code>discord:1234567891234567891</code><br>
+But you can also use <code>1234567891234567891</code></p>
+</blockquote>
+<p><img src=https://prefech.com/i/slashcommands.png alt=commands></p>
+<blockquote>
+<p><strong>Commands:</strong><br>
+<code>/Sync</code>: Run a sync on your server to match all bans with the global ban list.<br>
+<code>/bypass</code>: Allow a discord id to bypass the global bans. (This will prevent them from being kicked/banned)<br>
+<code>/banuser</code>: This will allow you to toggle the kick to a ban function and the other way around.<br>
+<code>/check</code>: Check if the given identifier is global banned.<br>
+<code>/invite</code>: Get an invite to get the bot in another discord!<br>
+<code>/ping</code>: Ping the bot to see if it&rsquo;s online.</p>
+</blockquote>
+<p><img src=https://prefech.com/i/syncinvite.png alt=invite></p>
+<blockquote>
+<p>Click the button below to invite the bot.<br>
+If you have any questions you can make a ticket on our discord and we will be happy to help!<br>
+<a href=https://discord.gg/prefech>https://discord.gg/prefech</a></p>
+</blockquote>
+<p><a href="https://discord.com/oauth2/authorize?client_id=819625649257185301&scope=bot%20applications.commands&permissions=265222"><img src=https://prefech.com/i/addtoserver.png alt=button></a></p>
 <footer class=footline>
 </footer>
 </div>
 </div>
 <div id=navigation>
-<a class="nav nav-prev" href=/jd_logs/single/ title="One Player Export"> <i class="fa fa-chevron-left"></i></a>
-<a class="nav nav-next" href=/jd_logs/gbansync/ title="Global Ban Sync" style=margin-right:0><i class="fa fa-chevron-right"></i></a>
+<a class="nav nav-prev" href=/jd_logs/dual/ title="Two Player Export"> <i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=/jd_logs/embeds/ title=Embeds style=margin-right:0><i class="fa fa-chevron-right"></i></a>
 </div>
 </section>
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
