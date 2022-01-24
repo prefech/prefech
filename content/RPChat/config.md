@@ -57,6 +57,7 @@ channel | yes | This will be the channel from Config.Channels the command will p
 username | no | This can be either `true`, `false` or a custom string. |
 logchannel | no | This is the channel name you have defined in `JD_logs/config/webhooks.json` |
 suggestion | no | just like adding chat suggestions so people will know how to use the command. |
+perms | no | Set the ace permission needed to use this command. |
 
 #### Chat Modes
 Input | Required/Optional | Usage |
