@@ -11,6 +11,10 @@ You will find the config file in the config folder.
 When you just installed JD_logs your config should look like this:
 ```json
 {
+    "locals": "en",
+
+    "EnableAcFunctions": true,
+
     "allLogs": true,
     "postals": true,
     "weaponLog": true,
@@ -52,8 +56,14 @@ When you just installed JD_logs your config should look like this:
 
     "WeaponsNotLogged": [
         "WEAPON_SNOWBALL",
-        "WEAPON_FIREEXTINGUISHER"
-    ]
+        "WEAPON_FIREEXTINGUISHER",
+        "WEAPON_PETROLCAN"
+    ],
+
+    "Commands": {
+        "logs": ["logs", "lh"],
+        "screenshot": ["screenshot", "ss"]
+    }
 }
 ```
 
@@ -62,6 +72,8 @@ When you just installed JD_logs your config should look like this:
 #### Basic settings.
 Setting | Default value | Usage |
 --- | --- | --- |
+locals | `en` | This will set the language in all displayed text. |
+EnableAcFunctions | `true` | With this you can disable the anti cheat functions. |
 allLogs | `true` | If this has been set to true the resource will try to send every single log made to the `all` channel in the webhooks.json |
 postals | `true` | If this has been set to true a postal will be included in the embeds.  (This will only work if you have embeds enabled for the channel.) |
 weaponLog | `true` | If this has been set to true the resource will try to send a log to the `shooting` channel in your webhooks.json for every time a player fires a weapon. |
@@ -126,3 +138,9 @@ GlobalBanBypass | `[]` | You can add any identifiers here for people that are gl
 Setting | Default value | Usage |
 --- | --- | --- |
 WeaponsNotLogged | `["WEAPON_SNOWBALL", "WEAPON_FIREEXTINGUISHER"]` | These weapons will not be logged in the `shooting` channel. |
+
+#### Commands
+Setting | Default Value | Usage |
+--- | --- | --- |
+logs | `["logs", "lh"]` | This will the the commands used for the logs history command. |
+screenshot | `["screenshot", "ss"]` | This will be the commands used for making a screenshot on a target player. |
