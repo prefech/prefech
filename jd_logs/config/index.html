@@ -7,18 +7,18 @@
 <meta name=author content="JokeDevil">
 <link rel=icon href=/images/favicon.png type=image/png>
 <title>Configuration :: Prefech Documentation</title>
-<link href=/css/nucleus.css?1643557463 rel=stylesheet>
-<link href=/css/fontawesome-all.min.css?1643557463 rel=stylesheet>
-<link href=/css/hybrid.css?1643557463 rel=stylesheet>
-<link href=/css/featherlight.min.css?1643557463 rel=stylesheet>
-<link href=/css/perfect-scrollbar.min.css?1643557463 rel=stylesheet>
-<link href=/css/auto-complete.css?1643557463 rel=stylesheet>
-<link href=/css/atom-one-dark-reasonable.css?1643557463 rel=stylesheet>
-<link href=/css/theme.css?1643557463 rel=stylesheet>
-<link href=/css/tabs.css?1643557463 rel=stylesheet>
-<link href=/css/hugo-theme.css?1643557463 rel=stylesheet>
-<link href=/css/theme-blue.css?1643557463 rel=stylesheet>
-<script src=/js/jquery-3.3.1.min.js?1643557463></script>
+<link href=/css/nucleus.css?1643557672 rel=stylesheet>
+<link href=/css/fontawesome-all.min.css?1643557672 rel=stylesheet>
+<link href=/css/hybrid.css?1643557672 rel=stylesheet>
+<link href=/css/featherlight.min.css?1643557672 rel=stylesheet>
+<link href=/css/perfect-scrollbar.min.css?1643557672 rel=stylesheet>
+<link href=/css/auto-complete.css?1643557672 rel=stylesheet>
+<link href=/css/atom-one-dark-reasonable.css?1643557672 rel=stylesheet>
+<link href=/css/theme.css?1643557672 rel=stylesheet>
+<link href=/css/tabs.css?1643557672 rel=stylesheet>
+<link href=/css/hugo-theme.css?1643557672 rel=stylesheet>
+<link href=/css/theme-blue.css?1643557672 rel=stylesheet>
+<script src=/js/jquery-3.3.1.min.js?1643557672></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=/jd_logs/config/>
@@ -34,10 +34,10 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script type=text/javascript src=/js/lunr.min.js?1643557463></script>
-<script type=text/javascript src=/js/auto-complete.js?1643557463></script>
+<script type=text/javascript src=/js/lunr.min.js?1643557672></script>
+<script type=text/javascript src=/js/auto-complete.js?1643557672></script>
 <script type=text/javascript>var baseurl="https://docs.prefech.com/"</script>
-<script type=text/javascript src=/js/search.js?1643557463></script>
+<script type=text/javascript src=/js/search.js?1643557672></script>
 </div>
 <section id=homelinks>
 <ul>
@@ -299,6 +299,10 @@ Configuration
 You will find the config file in the config folder.</p>
 <p>When you just installed JD_logs your config should look like this:</p>
 <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{
+    <span style=color:#f92672>&#34;locals&#34;</span>: <span style=color:#e6db74>&#34;en&#34;</span>,
+
+    <span style=color:#f92672>&#34;EnableAcFunctions&#34;</span>: <span style=color:#66d9ef>true</span>,
+
     <span style=color:#f92672>&#34;allLogs&#34;</span>: <span style=color:#66d9ef>true</span>,
     <span style=color:#f92672>&#34;postals&#34;</span>: <span style=color:#66d9ef>true</span>,
     <span style=color:#f92672>&#34;weaponLog&#34;</span>: <span style=color:#66d9ef>true</span>,
@@ -340,8 +344,14 @@ You will find the config file in the config folder.</p>
 
     <span style=color:#f92672>&#34;WeaponsNotLogged&#34;</span>: [
         <span style=color:#e6db74>&#34;WEAPON_SNOWBALL&#34;</span>,
-        <span style=color:#e6db74>&#34;WEAPON_FIREEXTINGUISHER&#34;</span>
-    ]
+        <span style=color:#e6db74>&#34;WEAPON_FIREEXTINGUISHER&#34;</span>,
+        <span style=color:#e6db74>&#34;WEAPON_PETROLCAN&#34;</span>
+    ],
+
+    <span style=color:#f92672>&#34;Commands&#34;</span>: {
+        <span style=color:#f92672>&#34;logs&#34;</span>: [<span style=color:#e6db74>&#34;logs&#34;</span>, <span style=color:#e6db74>&#34;lh&#34;</span>],
+        <span style=color:#f92672>&#34;screenshot&#34;</span>: [<span style=color:#e6db74>&#34;screenshot&#34;</span>, <span style=color:#e6db74>&#34;ss&#34;</span>]
+    }
 }
 </code></pre></div><h4 id=config-settings>Config settings:</h4>
 <h4 id=basic-settings>Basic settings.</h4>
@@ -354,6 +364,16 @@ You will find the config file in the config folder.</p>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>locals</td>
+<td><code>en</code></td>
+<td>This will set the language in all displayed text.</td>
+</tr>
+<tr>
+<td>EnableAcFunctions</td>
+<td><code>true</code></td>
+<td>With this you can disable the anti cheat functions.</td>
+</tr>
 <tr>
 <td>allLogs</td>
 <td><code>true</code></td>
@@ -612,6 +632,28 @@ You will find the config file in the config folder.</p>
 </tr>
 </tbody>
 </table>
+<h4 id=commands>Commands</h4>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Default Value</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>logs</td>
+<td><code>["logs", "lh"]</code></td>
+<td>This will the the commands used for the logs history command.</td>
+</tr>
+<tr>
+<td>screenshot</td>
+<td><code>["screenshot", "ss"]</code></td>
+<td>This will be the commands used for making a screenshot on a target player.</td>
+</tr>
+</tbody>
+</table>
 <footer class=footline>
 </footer>
 </div>
@@ -624,17 +666,17 @@ You will find the config file in the config folder.</p>
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=/js/clipboard.min.js?1643557463></script>
-<script src=/js/perfect-scrollbar.min.js?1643557463></script>
-<script src=/js/perfect-scrollbar.jquery.min.js?1643557463></script>
-<script src=/js/jquery.sticky.js?1643557463></script>
-<script src=/js/featherlight.min.js?1643557463></script>
-<script src=/js/highlight.pack.js?1643557463></script>
+<script src=/js/clipboard.min.js?1643557672></script>
+<script src=/js/perfect-scrollbar.min.js?1643557672></script>
+<script src=/js/perfect-scrollbar.jquery.min.js?1643557672></script>
+<script src=/js/jquery.sticky.js?1643557672></script>
+<script src=/js/featherlight.min.js?1643557672></script>
+<script src=/js/highlight.pack.js?1643557672></script>
 <script>hljs.initHighlightingOnLoad()</script>
-<script src=/js/modernizr.custom-3.6.0.js?1643557463></script>
-<script src=/js/learn.js?1643557463></script>
-<script src=/js/hugo-learn.js?1643557463></script>
-<script src=/mermaid/mermaid.js?1643557463></script>
+<script src=/js/modernizr.custom-3.6.0.js?1643557672></script>
+<script src=/js/learn.js?1643557672></script>
+<script src=/js/hugo-learn.js?1643557672></script>
+<script src=/mermaid/mermaid.js?1643557672></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
 </body>
 </html>
