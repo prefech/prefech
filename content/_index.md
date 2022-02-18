@@ -19,6 +19,7 @@ JD_ServerMeeting | | [Github](https://github.com/prefech/JD_ServerMeeting) |
 ALPR | | [Github](https://github.com/prefech/Prefech_ALPR) |
 PlayTime | [Docs](./playtime/) | [Github](https://github.com/prefech/Prefech_playTime) |
 Notify | [Docs](./notify/) | [Github](https://github.com/prefech/Prefech_Notify) |
+NotifyV2 | [Docs](./notifyv2/) | [Tebex](https://store.prefech.com/package/) |
 DonatorLock | | [Github](https://github.com/prefech/Prefech_DonatorLock) |
 RPChat | [Docs](./rpchat/) | [Tebex](https://prefech.tebex.io/package/4832919)
 
