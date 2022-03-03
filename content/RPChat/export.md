@@ -33,7 +33,7 @@ exports.Prefech_RPChat:CustomTriggerMessage({
     target = source,
     message = 'JokeDevil has been transported to the Hospital.',
     icon = 'fas fa-ambulance',
-    color = '190, 213, 90',
+    color = '#bed55a',
     name = 'Ambulance'
 })
 ```
