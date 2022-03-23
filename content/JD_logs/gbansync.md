@@ -7,11 +7,6 @@ weight: 55
 > Want to keep your discord clean the same way as your server?  
 > You can now sync Global bans with your discord!  
 > Our goal is to not only keep your server clean of hackers but also your discord!  
-  
-![kickban](https://prefech.com/i/kickban.png)
-> You can decide yourself if you want to kick them off your discord or just ban them.  
-> Use the command /banuser to change the setting.  
-> By default the bot will only kick global banned players from your discord.  
 
 ![check](https://prefech.com/i/check.png)
 > Want to know is someone is on the global ban list?  
@@ -26,8 +21,7 @@ weight: 55
 ![commands](https://prefech.com/i/slashcommands.png)
 > **Commands:**  
 > `/Sync`: Run a sync on your server to match all bans with the global ban list.  
-> `/bypass`: Allow a discord id to bypass the global bans. (This will prevent them from being kicked/banned)  
-> `/banuser`: This will allow you to toggle the kick to a ban function and the other way around.  
+> `/bypass`: Allow a discord id to bypass the global bans. (This will prevent them from being banned)  
 > `/check`: Check if the given identifier is global banned.  
 > `/invite`: Get an invite to get the bot in another discord!  
 > `/ping`: Ping the bot to see if it's online.  
