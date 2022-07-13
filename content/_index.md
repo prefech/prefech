@@ -16,12 +16,13 @@ JD_WordFilter | | [Github](https://github.com/prefech/JD_WordFilter) |
 JD_Report | | [Github](https://github.com/prefech/JD_Report) |
 JD_Prison |  | [Github](https://github.com/prefech/JD_Prison) |
 JD_ServerMeeting | | [Github](https://github.com/prefech/JD_ServerMeeting) |
-ALPR | | [Github](https://github.com/prefech/Prefech_ALPR) |
-PlayTime | [Docs](./playtime/) | [Github](https://github.com/prefech/Prefech_playTime) |
-Notify | [Docs](./notify/) | [Github](https://github.com/prefech/Prefech_Notify) |
-NotifyV2 | [Docs](./notifyv2/) | [Tebex](https://store.prefech.com/package/) |
-DonatorLock | | [Github](https://github.com/prefech/Prefech_DonatorLock) |
-RPChat | [Docs](./rpchat/) | [Tebex](https://prefech.tebex.io/package/4832919)
+Prefech_ALPR | | [Github](https://github.com/prefech/Prefech_ALPR) |
+Prefech_PlayTime | [Docs](./playtime/) | [Github](https://github.com/prefech/Prefech_playTime) |
+Prefech_Notify | [Docs](./notify/) | [Github](https://github.com/prefech/Prefech_Notify) |
+Prefech_NotifyV2 | [Docs](./notifyv2/) | [Tebex](https://prefech.tebex.io/package/4973197) |
+Prefech_DonatorLock | | [Github](https://github.com/prefech/Prefech_DonatorLock) |
+Prefech_RPChat | [Docs](./rpchat/) | [Tebex](https://prefech.tebex.io/package/4832919)
+Prefech_TebexClaim | [Docs](./tebexclaim/) | [Tebex](https://prefech.tebex.io/package/5192898)
 
 Deprecated Resources |
 --- |

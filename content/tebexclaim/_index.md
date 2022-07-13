@@ -10,12 +10,11 @@ Pages |
 [Installation](./installation) |
 [Configuation](./config) |
 [Commands](./commands) |
-[Export](./export) |
 
 Downloads |
 --- |
-[Latest Version](github.com/prefech/JD_logs/releases/latest) |
-[Beta Version](https://github.com/prefech/JD_logs/tree/beta) |
+[Tebex](https://prefech.tebex.io/package/5192898) |
+[Key Master](https://keymaster.fivem.net/asset-grants) |
 
 {{% notice info%}}
 For the screenshot function to work you will need to have screenshot-basic installed and have a webhook in `imageStore`

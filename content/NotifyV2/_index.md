@@ -11,4 +11,4 @@ Pages |
 
 Downloads |
 --- |
-[Tebex](https://store.prefech.com/package/) |
+[Tebex](https://prefech.tebex.io/package/4973197) |
