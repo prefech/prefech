@@ -7,10 +7,10 @@ weight: 10
 
 Links |
 --- |
-[Support Discord](https://discord.gg/prefech) |
-[Website](https://prefech.com/) |
-[Prefech Forums](https://forum.prefech.com/) |
-[Tebex Store](https://prefech.tebex.io/) |
+💬 [Support Discord](https://discord.gg/prefech) |
+🌍 [Website](https://prefech.com/) |
+💬 [Prefech Forums](https://forum.prefech.com/) |
+🛒 [Tebex Store](https://prefech.tebex.io/) |
 
 Resources | Docs | Github | Forum Post |
 --- | --- | --- | -- |
@@ -34,9 +34,9 @@ Resources | Docs | Github | Forum Post |
 
 Deprecated Resources | Docs | Replacement |
 --- | -- | -- |
-Prefech_Notify | [Docs](./notify/) | [Prefech_NotifyV2](./NotifyV2/)
-JD_logs | [Docs](./jd_logs/) | [JD_logsV3](./JD_logsV3/)
-JD_SafeZone | N/A | [Prefech_SafeZone](./safezone/) |
-JD_PermCheck | N/A | [JD_Perms](https://github.com/prefech/JD_Perms) |
-JD_vehWhitelist | N/A | [JD_WhitelistV2](https://github.com/prefech/JD_WhitelistV2) |
-JD_RPChat | N/A | [Prefech_RPChat](./RPChat/) |
+🔔 Prefech_Notify | [Docs](./notify/) | [Prefech_NotifyV2](./NotifyV2/)
+📑 JD_logs | [Docs](./jd_logs/) | [JD_logsV3](./JD_logsV3/)
+🛡️ JD_SafeZone | N/A | [Prefech_SafeZone](./safezone/) |
+🛅 JD_PermCheck | N/A | [JD_Perms](https://github.com/prefech/JD_Perms) |
+🚗 JD_vehWhitelist | N/A | [JD_WhitelistV2](https://github.com/prefech/JD_WhitelistV2) |
+💬 JD_RPChat | N/A | [Prefech_RPChat](./RPChat/) |
