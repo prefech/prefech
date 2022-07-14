@@ -3,6 +3,8 @@ title: "Configuration"
 weight: 46
 ---
 
+# Abandoned resource please use [JD_logsV3](../JD_logsV3/)
+
 ### Configuration
 
 After you have installed JD_logs you can open the config file and change the settings to your needs.

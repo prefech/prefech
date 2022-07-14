@@ -3,8 +3,6 @@ title: "No Player Export"
 weight: 51
 ---
 
-# Abandoned resource please use [JD_logsV3](../JD_logsV3/)
-
 Using the export with no player details!
 
 {{% notice info%}}
@@ -28,5 +26,5 @@ end)
 **player_id:** Since there is no players we have removed it
 **player_2_id:** Since there is no players we have removed it
 **color:** This can be any color you want
-**channel:** This will be linked to the webhook in the config.
-**screenshot:** This can be true if you want the embed to include a screenshot. 
+**channel:** This will be linked to the channel in the config.
+**screenshot:** This can be true if you want the embed to include a screenshot.

@@ -3,9 +3,7 @@ title: "Embeds"
 weight: 60
 ---
 
-{{% notice info%}}
-
-{{% /notice %}}
+# Abandoned resource please use [JD_logsV3](../JD_logsV3/)
 
 
 Embeds can be disabled in the **webhooks.json**

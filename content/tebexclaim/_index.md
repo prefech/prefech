@@ -1,5 +1,5 @@
 ---
-title: "TebexClaim"
+title: "Prefech_TebexClaim"
 weight: 23
 ---
 
@@ -11,11 +11,15 @@ Pages |
 [Configuation](./config) |
 [Commands](./commands) |
 
-Downloads |
---- |
-[Tebex](https://prefech.tebex.io/package/5192898) |
+Downloads | |
+--- | -- |
+[Tebex](https://prefech.tebex.io/package/5192898) | 3.99 EUR |
 [Key Master](https://keymaster.fivem.net/asset-grants) |
 
-{{% notice info%}}
-For the screenshot function to work you will need to have screenshot-basic installed and have a webhook in `imageStore`
-{{% /notice %}}
+Info | |
+-- | -- |
+Code is accessible | Yes |
+Subscription-based | No, One time Payment |
+Price | 3.99 EUR |
+Requirements | [Full List Here](./requirments.md) |
+Support | Yes, we have a [Discord](https://discord.gg/prefech) server at your disposal

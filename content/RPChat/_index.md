@@ -1,5 +1,5 @@
 ---
-title: "RPChat"
+title: "Prefech_RPChat"
 weight: 20
 ---
 
@@ -11,6 +11,15 @@ Pages |
 [Config](./config) |
 [Export](./export) |
 
-Downloads | 
---- |
-[Tebex](https://prefech.tebex.io/package/4832919) |
+Downloads | |
+--- | -- |
+[Tebex](https://prefech.tebex.io/package/4832919) | 9.99 EUR |
+[Key Master](https://keymaster.fivem.net/asset-grants) |
+
+Info | |
+-- | -- |
+Code is accessible | Yes |
+Subscription-based | No, One time Payment |
+Price | 9.99 EUR |
+Requirements | [Full List Here](./requirments.md) |
+Support | Yes, we have a [Discord](https://discord.gg/prefech) server at your disposal

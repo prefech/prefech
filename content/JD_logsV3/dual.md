@@ -3,8 +3,6 @@ title: "Two Player Export"
 weight: 53
 ---
 
-# Abandoned resource please use [JD_logsV3](../JD_logsV3/)
-
 Using the export for two players!
 
 - **player_id:** is the variable that is used for getting the player info.
@@ -33,5 +31,5 @@ end)
 **EmbedMessage:** This will be the /mention message in this case  
 **player_id:** In this use it will be source  
 **player_2_id:** Since there is one player we have removed it  
-**channel:** This will be linked to the webhook in the config.  
+**channel:** This will be linked to the channel in the config.  
 **screenshot:** This can be true if you want the embed to include a screenshot.  

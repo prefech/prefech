@@ -3,6 +3,8 @@ title: "Features"
 weight: 30
 ---
 
+# Abandoned resource please use [JD_logsV3](../JD_logsV3/)
+
 ### Main Features
 
 - Basic logs:
