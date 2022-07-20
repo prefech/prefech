@@ -9,6 +9,7 @@ Pages |
 [Main Features](./features) |
 [Commands](./commands) |
 [Export](./export) |
+[API](./api) |
 
 Downloads | 
 --- |
