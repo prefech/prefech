@@ -3,9 +3,6 @@ title: "JD_logsV3"
 weight: 10
 ---
 
-# JD_logsV3 is now in closed beta testing.
-Apply [here](https://prefech.com/portal/apply/beta) to get access.
-
 Pages |
 --- |
 [Requirements](./requirments) |
