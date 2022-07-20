@@ -2,7 +2,7 @@
 title: "Installation"
 weight: 45
 ---
-# Abandoned resource please use [JD_logsV3](../JD_logsV3/)
+# Abandoned resource please use [JD_logsV3](../jd_logsv3/)
 
 ### Installation
 

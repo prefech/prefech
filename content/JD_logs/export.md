@@ -3,7 +3,7 @@ title: "Export"
 weight: 50
 ---
 
-# Abandoned resource please use [JD_logsV3](../JD_logsV3/)
+# Abandoned resource please use [JD_logsV3](../jd_logsv3/)
 
 To create custom logs you will need to add the export to the event/function or command you want to log.  
 This is in the resource you want to log

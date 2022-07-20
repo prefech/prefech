@@ -3,7 +3,7 @@ title: "Configuration"
 weight: 46
 ---
 
-# Abandoned resource please use [JD_logsV3](../JD_logsV3/)
+# Abandoned resource please use [JD_logsV3](../jd_logsv3/)
 
 ### Configuration
 
