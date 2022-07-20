@@ -6,9 +6,9 @@ weight: 45
 # All Players Playtime
 
 ### Path
-`http://{SERVERIP}:{PORT}/Prefech_playTime/info` |
+http://{SERVERIP}:{PORT}/Prefech_playTime/info |
 --|
-`http://localhost:30120/Prefech_playTime/info`|
+http://localhost:30120/Prefech_playTime/info|
 
 ### Response Structure
 Field | Type | Description |
@@ -41,9 +41,9 @@ Header | Value |
 
 # Single Player Playtime
  Path
-`http://{SERVERIP}:{PORT}/Prefech_playTime/info/{STEAM_HEX}` |
+http://{SERVERIP}:{PORT}/Prefech_playTime/info/{STEAM_HEX} |
 --|
-`http://localhost:30120/Prefech_playTime/info/steam:123456789123456` |
+http://localhost:30120/Prefech_playTime/info/steam:123456789123456 |
 
 ### Response Structure
 Field | Type | Description |
