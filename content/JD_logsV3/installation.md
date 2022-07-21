@@ -16,7 +16,7 @@ weight: 45
         - Message Content Intent
 4. Add this to your server.cfg
 ```
-ensure JD_logs
+ensure JD_logsV3
 ```
 5. Start the resource once and let it build.
 6. Go to your discord where you invited the bot (*The one where you want your new main logs to be.*) and use the command `!jdlogs setup`.
