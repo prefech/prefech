@@ -5,7 +5,7 @@ weight: 45
 
 ### Installation
 
-1. Download the latest version from github: https://github.com/prefech/JD_logsV3/releases/latest
+1. Download the latest version from github: https://github.com/prefech/JD_logsV3 (Click the clone button and then download to zip.)
 2. Put the JD_logsV3 folder in the server resource directory
     - Make sure to rename the folder to **JD_logsV3**.
 3. Get yourself the bot token(s) and add them in the `config/config.json`

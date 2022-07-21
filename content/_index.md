@@ -14,7 +14,7 @@ Links |
 
 Resources | Docs | Github | Forum Post |
 --- | --- | --- | -- |
-📑 JD_logsV3 | [Docs](./JD_logsV3/) | [Github](https://github.com/prefech/JD_logsV3) | Soon™ |
+📑 JD_logsV3 | [Docs](./jd_logsv3/) | [Github](https://github.com/prefech/jd_logsv3) | Soon™ |
 ⏰ Prefech_PlayTime | [Docs](./playtime/) | [Github](https://github.com/prefech/Prefech_playTime) | [forum.cfx.re](https://forum.cfx.re/t/prefech-playtime/4772300)
 💬 Prefech_RPChat | [Docs](./rpchat/) | [Tebex](https://prefech.tebex.io/package/4832919) | [forum.cfx.re](https://forum.cfx.re/t/prefech-rpchat-with-chat-modes/4789722) |
 🔔 Prefech_NotifyV2 | [Docs](./notifyv2/) | [Tebex](https://prefech.tebex.io/package/4973197) | [forum.cfx.re](https://forum.cfx.re/t/prefech-notify-v2/4817324) |
