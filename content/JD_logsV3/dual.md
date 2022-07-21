@@ -18,7 +18,7 @@ Using the export for two players!
 ```lua
 RegisterCommand("mention", function(source, args, rawCommand)
     TriggerClientEvent('chatMessage', -1, "Mention | " .. GetPlayerName(args[1]), { 201, 201, 201 })
-    exports.JD_logs:createLog({
+    exports.JD_logsV3:createLog({
         EmbedMessage = "Mention | " .. GetPlayerName(args[1]),
         player_id = source,
         player_2_id = args[1],

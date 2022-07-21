@@ -14,7 +14,7 @@ Since we’re not using player_id and player_2_id we have removed them from the 
 ```lua
 RegisterCommand("tweet", function(source, args, rawCommand)
     TriggerClientEvent('chatMessage', -1, "Tweet | " .. GetPlayerName(source)..": "..rawCommand:gsub("tweet ", ""), { 201, 201, 201 })
-    exports.JD_logs:createLog({
+    exports.JD_logsV3:createLog({
         EmbedMessage = "Tweet | " .. GetPlayerName(source)..": "..rawCommand:gsub("tweet ", ""),
         channel = "tweet",
         screenshot = false

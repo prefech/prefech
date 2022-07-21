@@ -15,7 +15,7 @@ This is in the resource you want to log
 You can use the command `!jdlogs create` on your discord server to setup a custom logs channel.
 
 ```lua
-exports.JD_logs:createLog({
+exports.JD_logsV3:createLog({
     EmbedMessage = "EMBED MESSAGE",
     player_id = SERVER_ID_PLAYER_ONE,
     player_2_id = SERVER_ID_PLAYER_TWO,

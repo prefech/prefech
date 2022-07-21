@@ -18,7 +18,7 @@ for server-side resources `player_id` will be `source` on client-side this will 
 ```lua
 RegisterCommand("me", function(source, args, rawCommand)
     TriggerClientEvent('chatMessage', -1, "ME | " .. GetPlayerName(source)..": "..rawCommand:gsub("me", ""), { 201, 201, 201 })
-    exports.JD_logs:createLog({
+    exports.JD_logsV3:createLog({
         EmbedMessage = "ME | " .. GetPlayerName(source)..": "..rawCommand:gsub("me", ""),
         player_id = source,
         channel = "me",
