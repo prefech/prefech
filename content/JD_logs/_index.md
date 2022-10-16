@@ -1,10 +1,7 @@
 ---
-title: "JD_logs - Depricated"
+title: "JD_logs"
 weight: 10001
 ---
-
-# Abandoned resource please use [JD_logsV3](../jd_logsv3/)
-
 Pages |
 --- |
 [Requirements](./requirments) |
