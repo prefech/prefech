@@ -14,7 +14,8 @@ Links |
 
 Resources | Docs | Github | Forum Post |
 --- | --- | --- | -- |
-📑 JD_logsV3 | [Docs](./jd_logsv3/) | [Github](https://github.com/prefech/jd_logsv3) | Soon™ |
+📑 JD_logsV3 | [Docs](./jd_logsv3/) | [Github](https://github.com/prefech/jd_logsv3) | N/A |
+📑 JD_logs | [Docs](./jd_logs/) | [Github](https://github.com/prefech/jd_logs) | N/A
 ⏰ Prefech_PlayTime | [Docs](./playtime/) | [Github](https://github.com/prefech/Prefech_playTime) | [forum.cfx.re](https://forum.cfx.re/t/prefech-playtime/4772300)
 💬 Prefech_RPChat | [Docs](./rpchat/) | [Tebex](https://prefech.tebex.io/package/4832919) | [forum.cfx.re](https://forum.cfx.re/t/prefech-rpchat-with-chat-modes/4789722) |
 🔔 Prefech_NotifyV2 | [Docs](./notifyv2/) | [Tebex](https://prefech.tebex.io/package/4973197) | [forum.cfx.re](https://forum.cfx.re/t/prefech-notify-v2/4817324) |
@@ -35,7 +36,6 @@ Resources | Docs | Github | Forum Post |
 Deprecated Resources | Docs | Replacement |
 --- | -- | -- |
 🔔 Prefech_Notify | [Docs](./notify/) | [Prefech_NotifyV2](./notifyv2/)
-📑 JD_logs | [Docs](./jd_logs/) | [JD_logsV3](./jd_logsv3/)
 🛡️ JD_SafeZone | N/A | [Prefech_SafeZone](./safezone/) |
 🛅 JD_PermCheck | N/A | [JD_Perms](https://github.com/prefech/JD_Perms) |
 🚗 JD_vehWhitelist | N/A | [JD_WhitelistV2](https://github.com/prefech/JD_WhitelistV2) |
