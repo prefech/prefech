@@ -3,8 +3,6 @@ title: "Two Player Export"
 weight: 53
 ---
 
-# Abandoned resource please use [JD_logsV3](../jd_logsv3/)
-
 Using the export for two players!
 
 - **player_id:** is the variable that is used for getting the player info.
