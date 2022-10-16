@@ -3,8 +3,6 @@ title: "Commands"
 weight: 40
 ---
 
-# Abandoned resource please use [JD_logsV3](../jd_logsv3/)
-
 ### Commands
 
 Name | Example | Usage
