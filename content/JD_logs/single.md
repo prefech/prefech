@@ -3,8 +3,6 @@ title: "One Player Export"
 weight: 52
 ---
 
-# Abandoned resource please use [JD_logsV3](../jd_logsv3/)
-
 Using the export for one player!
 
 - **player_id:** is the variable that is used for getting the player info.  
