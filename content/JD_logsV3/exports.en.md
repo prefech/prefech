@@ -1,17 +1,17 @@
 ---
-title: "Export"
+title: "Exports"
 weight: 50
 ---
 
 {{% notice danger%}}
-To make custom logs you will need to have some coding knowledge!  
-We only provide the export we can not help you make use of it.  
+To make custom logs you will need to have some coding knowledge!
+We only provide the export we can not help you make use of it.
 
 If you run into issues you can always open a ticket but there won't be guarantee that we can help.
 {{% /notice %}}
 
-To create custom logs you will need to add the export to the event/function or command you want to log.  
-This is in the resource you want to log  
+To create custom logs you will need to add the export to the event/function or command you want to log.
+This is in the resource you want to log
 You can use the command `!jdlogs create` on your discord server to setup a custom logs channel.
 
 ```lua

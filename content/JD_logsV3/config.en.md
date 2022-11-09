@@ -11,44 +11,56 @@ You will find the config file in the config folder.
 When you just installed JD_logs your config should look like this:
 ```json
 {
-    "prefix":"!",
-    "tokens": {
-        "1":{
-            "token": "",
-            "guildID": ""
-        },
-        "2":{
-            "token": "",
-            "guildID": ""
-        }
-    },
+    "prefix":"!jdlogs ",
+    "token": "",
+    "guildId": "",
+    "TimezoneOffset": "+00:00",
+    "language": "en",
 
     "NameChangePerms": "jd.staff",
     "screenshotPerms": "jd.staff",
 
     "allLogs": true,
-    "postals": true,
+
     "weaponLog": true,
+    "damageLog": true,
+    "deathLog": true,
 
     "playerId": true,
-    "steamId": true,
-    "steamUrl": true,
-    "discordId": true,
-    "license": true,
-    "license2": true,
-    "ip": true,
-    "playerPing": true,
+    "postals": true,
     "playerHealth": true,
     "playerArmor": true,
+    "playerPing": true,
 
-    "Session": false,
-    "PlayTime": false,
+    "ip": true,
+    "steamUrl": true,
+    "discordId": {
+        "enabled": true,
+        "spoiler": true
+    },
+    "steamId": {
+        "enabled": true,
+        "spoiler": true
+    },
+    "license": {
+        "enabled": true,
+        "spoiler": true
+    },
+
+    "WebhookResetMessage": false,
 
     "WeaponsNotLogged": [
         "WEAPON_SNOWBALL",
         "WEAPON_FIREEXTINGUISHER",
         "WEAPON_PETROLCAN"
-    ]
+    ],
+
+    "DiscordAcePerms": {
+        "DISCORD_ROLE_ID": {
+            "groups": ["group.admin", "group.mod"],
+            "perms": ["jd.staff"]
+        }
+    }
 }
 ```
 
@@ -58,7 +70,7 @@ When you just installed JD_logs your config should look like this:
 Setting | Default value | Usage |
 --- | --- | --- |
 prefix | `!` | This is the prefix for using the bot commands. |
-tokens | `{ "1":{ "token": "", "guildID": "" }}` | These are the bot tokens to login on discord. [How to get a bot token?](https://forum.prefech.com/d/12-how-to-get-a-discord-bot-token) |
+token | `""` | This is the bot token to login on discord. [How to get a bot token?](https://forum.prefech.com/d/12-how-to-get-a-discord-bot-token) |
 
 #### Ace permission settings.
 Setting | Default value | Usage |
@@ -70,7 +82,9 @@ screenshotPerms | `"jd.staff"` | This is the ace permission needed to use the `/
 Setting | Default value | Usage |
 --- | --- | --- |
 All Logs | `true` | If this has been set to true the resource will try to send every single log made to the all channel in the channels.json |
-postals | `true` | If this has been set to true a postal will be included in the embeds.
+weaponLog | `true` | With this setting you can enable or disable shooting logs. |
+damageLog | `true` |  With this setting you can enable or disable damage logs. |
+deathLog | `true` |  With this setting you can enable or disable death logs. |
 
 
 #### Player details
@@ -84,6 +98,7 @@ license | `true` | If this has been set to true the players license identidier w
 license2 | `true` | If this has been set to true the players license2 identidier will be displayed in the player details.  (Only shows when embeds are enabled for the channel.) |
 ip | `true` | If this has been set to true the players ip will be displayed in the player details.  (Only shows when embeds are enabled for the channel.) |
 playerPing | `true` | If this has been set to true the players ping will be displayed in the player details.  (Only shows when embeds are enabled for the channel.) |
+postals | `true` | If this has been set to true a postal will be included in the embeds.
 playerHealth | `true` | If this has been set to true the players health level will be displayed in the player details.|
 playerArmor | `true` | If this has been set to true the players armor level will be displayed in the player details. |
 
@@ -91,3 +106,8 @@ playerArmor | `true` | If this has been set to true the players armor level will
 Setting | Default value | Usage |
 --- | --- | --- |
 WeaponsNotLogged | `["WEAPON_SNOWBALL", "WEAPON_FIREEXTINGUISHER", "WEAPON_PETROLCAN"]` | These weapons will not be logged in the `shooting` channel. |
+
+#### DiscordAcePerms
+Setting | Default value | Usage |
+--- | --- | --- |
+DiscordRoleId | `"ROLEID": { "groups": [], "perms": []}` | Add permisions based on discord roles.

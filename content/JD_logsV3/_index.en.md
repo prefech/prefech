@@ -14,9 +14,8 @@ Pages |
 
 Downloads |
 --- |
-[Latest Version](github.com/prefech/JD_logsV3/releases/latest) |
-[FiveM Forum Post](https://forum.cfx.re/) |
-[Prefech Forum Post](https://forum.prefech.com/)
+[Latest Version](github.com/prefech/JD_logsV3) |
+[Beta Version](github.com/prefech/JD_logsV3) - Soon™️ |
 
 Info | |
 -- | -- |

@@ -7,10 +7,10 @@ weight: 40
 
 ### Game Commands
 Name | Example | Usage
---- | --- | --- | 
+--- | --- | --- |
 screenshot | /screenshot 12 | Will make a screenshot of the target player and send them to discord.|
-  
-  
+
+
 ### Discord Commands
 Name | Example | Usage
 --- | --- | --- |
@@ -22,4 +22,4 @@ resethook | !jdlogs resethook | Will create a new webhook for imageStore. (Every
 players | !jdlogs players | Will return a list of online players and their server id.|
 screenshot | !jdlogs screenshot 1 | Will create a screenshot of the player with server id 1.|
 ss | !jdlogs ss 1 | Will create a screenshot of the player with server id 1 (Just a short command).|
-embed | !jdlogs embed all | Will disable or enable the embeds for the channel.|
+uninstall | !jdlogs uninstall | Will remove all channels created by JD_logsV3 from the discord.
