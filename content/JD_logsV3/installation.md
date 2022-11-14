@@ -7,14 +7,15 @@ weight: 45
 
 1. Download the latest version from github: https://github.com/prefech/JD_logsV3 (Click the clone button and then download to zip.)
 2. Put the JD_logsV3 folder in the server resource directory
-    - Make sure to rename the folder to **JD_logsV3**.
-3. Get yourself the bot token(s) and add them in the `config/config.json`
+    - Make sure to rename the folder to **JD_logsV3**.  
+3. Rename the `example.config.json` to `config.json` (The file is in the config folder)
+4. Get yourself the bot token and add them in the `config.json`
     - Not sure how to get a bot token? [How to get a bot token.](https://forum.prefech.com/d/12-how-to-get-a-discord-bot-token)
     - The bots need to have the following intents enabled:
         - Presence Intent
         - Server Members Intent
         - Message Content Intent
-4. Add this to your server.cfg
+5. Add this to your server.cfg
 ```
 ensure JD_logsV3
 ```
