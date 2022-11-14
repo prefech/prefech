@@ -16,11 +16,15 @@ You can use the command `!jdlogs create` on your discord server to setup a custo
 
 ```lua
 exports.JD_logsV3:createLog({
-    EmbedMessage = "EMBED MESSAGE",
-    player_id = SERVER_ID_PLAYER_ONE,
-    player_2_id = SERVER_ID_PLAYER_TWO,
-    channel = "CHANNEL FROM WEBHOOKS CONFIG",
-    screenshot = true
+    EmbedMessage = "Embed Message", -- The Embed Message you want to show in the export.
+    player_id = SERVER_ID_PLAYER_ONE, -- Server id for the first player (Optional)
+    player_2_id = SERVER_ID_PLAYER_TWO, -- Server if for the second player (Optional)
+    channel = "Channel name from channels.json | Discord Channel ID | Discord Webhook URL", -- You have 3 options here.
+    screenshot = true, -- Make a screenshot of the first player (Optional)
+	screenshot_2 = true, -- Make a screenshot of the second player (Optional)
+	title = 'Custom Title', -- Set a custom title for this export (Optional)
+	color = '#A1A1A1', -- Set a custom color for this export (Optional)
+	icon = '✅' -- Set a custom icon for this export (Requires Custom Title) (Optional)
 })
 ```
 
