@@ -47,7 +47,7 @@ languageName = "English"
     url = "https://twitter.com/Prefech_/"
     weight = 60
 
-[Languages.en]
+[Languages.nl]
 title = "Prefech Documentatie"
 weight = 2
 languageName = "Dutch (Nederlands)"
