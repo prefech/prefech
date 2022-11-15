@@ -20,9 +20,9 @@ weight: 45
 ```
 ensure JD_logsV3
 ```
-5. Start de resource een keer en laat hem bouwen.
-6. Ga naar je discord waar je de bot hebt uitgenodigd (*De server waar je de main logs wilt.*) rn gebruik get volgende command `!jdlogs setup`.
-7. Start je server opnieuw op en je ziet de logs op je discord.
+7. Start de resource een keer en laat hem bouwen.
+8. Ga naar je discord waar je de bot hebt uitgenodigd (*De server waar je de main logs wilt.*) rn gebruik get volgende command `!jdlogs setup`.
+9. Start je server opnieuw op en je ziet de logs op je discord.
 
 {{% notice info%}}
 Als je daarna problemen hebt met installeren, kun je een ticket maken op onze discord en we helpen je graag verder: https://prefech.com/discord
