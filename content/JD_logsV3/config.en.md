@@ -90,14 +90,13 @@ deathLog | `true` |  With this setting you can enable or disable death logs. |
 #### Player details
 Setting | Default value | Usage |
 --- | --- | --- |
-playerId | `true` | If this has been set to true the players server id will be displayed in the player details.  (Only shows when embeds are enabled for the channel.) |
-steamId | `true` | If this has been set to true the steam hex will be displayed in the player details.  (Only shows when embeds are enabled for the channel.) |
-steamUrl | `true` | If this has been set to true the steam profile url will be displayed in the player details.  (Only shows when embeds are enabled for the channel.) |
-discordId | `true` | If this has been set to true the discord id will be displayed in the player details.  (Only shows when embeds are enabled for the channel.) |
-license | `true` | If this has been set to true the players license identidier will be displayed in the player details.   (Only shows when embeds are enabled for the channel.) |
-license2 | `true` | If this has been set to true the players license2 identidier will be displayed in the player details.  (Only shows when embeds are enabled for the channel.) |
-ip | `true` | If this has been set to true the players ip will be displayed in the player details.  (Only shows when embeds are enabled for the channel.) |
-playerPing | `true` | If this has been set to true the players ping will be displayed in the player details.  (Only shows when embeds are enabled for the channel.) |
+playerId | `true` | If this has been set to true the players server id will be displayed in the player details.  |
+steamId | `true` | If this has been set to true the steam hex will be displayed in the player details.  |
+steamUrl | `true` | If this has been set to true the steam profile url will be displayed in the player details.  |
+discordId | `true` | If this has been set to true the discord id will be displayed in the player details.  |
+license | `true` | If this has been set to true the players license identifier will be displayed in the player details.   |
+ip | `true` | If this has been set to true the players ip will be displayed in the player details.  |
+playerPing | `true` | If this has been set to true the players ping will be displayed in the player details.  |
 postals | `true` | If this has been set to true a postal will be included in the embeds.
 playerHealth | `true` | If this has been set to true the players health level will be displayed in the player details.|
 playerArmor | `true` | If this has been set to true the players armor level will be displayed in the player details. |
