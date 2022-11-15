@@ -9,13 +9,14 @@ weight: 45
 2. Plaats de map JD_logsV3 in de resource map
     - Zorg ervoor dat u de map hernoemt naar **JD_logsV3**.
 3. Hernoem de **example.config.json** naar **config.json** (Het bestand bevindt zich in de config map)
-4. Maak een bot token en voeg deze toe aan de `config.json`
+4. Doe hetzelfde voor de **example.channels.json**
+5. Maak een bot token en voeg deze toe aan de `config.json`
     - Ik weet niet zeker hoe ik een bot-token moet krijgen? [Hoe een bot-token te krijgen.](https://forum.prefech.com/d/12-how-to-get-a-discord-bot-token)
     - De bots moeten de volgende intents hebben ingeschakeld:
         - Presence Intent
         - Server Members Intent
         - Message Content Intent
-5. Voeg dit toe aan je server.cfg
+6. Voeg dit toe aan je server.cfg
 ```
 ensure JD_logsV3
 ```
