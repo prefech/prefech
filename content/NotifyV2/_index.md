@@ -18,6 +18,6 @@ Info | |
 -- | -- |
 Code is accessible | No |
 Subscription-based | No, only one time paymemt |
-Price | 3.99 EUR |
+Price | 5.75 EUR |
 Requirements | [Full List Here](./requirments.md) |
 Support | Yes, we have a [Discord](https://discord.gg/prefech) server at your disposal
