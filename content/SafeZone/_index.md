@@ -19,6 +19,6 @@ Info | |
 -- | -- |
 Code is accessible | Yes |
 Subscription-based | No, Onetime payment |
-Price | 9.99 EUR |
+Price | 11.50 EUR |
 Requirements | [Full List Here](./requirments.md) |
 Support | No, this resource has been replaced by [NotifyV2](../NotifyV2/)
