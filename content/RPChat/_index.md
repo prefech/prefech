@@ -13,7 +13,7 @@ Pages |
 
 Downloads | |
 --- | -- |
-[Tebex](https://prefech.tebex.io/package/4832919) | 9.99 EUR |
+[Tebex](https://prefech.tebex.io/package/4832919) | 11.50 EUR |
 [Key Master](https://keymaster.fivem.net/asset-grants) |
 
 Info | |
