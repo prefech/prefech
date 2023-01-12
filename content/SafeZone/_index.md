@@ -17,7 +17,7 @@ Downloads |  |
 
 Info | |
 -- | -- |
-Code is accessible | Yes |
+Code is accessible | No |
 Subscription-based | No, Onetime payment |
 Price | 11.50 EUR |
 Requirements | [Full List Here](./requirments.md) |
