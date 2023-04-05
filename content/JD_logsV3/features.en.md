@@ -7,7 +7,7 @@ weight: 30
 
 - Basic logs:
     - Chat Logs (Messages typed in chat.)
-    - Join Logs (When i player is connecting to the sever.)
+    - Join Logs (When a player is connecting to the sever.)
     - Leave Logs (When a player disconnects from the server.)
     - Death Logs (When a player dies/get killed.)
     - Shooting Logs (When a player fires a weapon.)
